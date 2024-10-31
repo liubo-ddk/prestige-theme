@@ -86,15 +86,18 @@
         "type": "sidebar-menu",
         "settings": {
           "primary_menu": "main-menu",
-          "secondary_menu": "test",
+          "secondary_menu": "",
           "show_social_media": true
         }
       },
       "announcement": {
         "type": "announcement",
+        "custom_css": [
+
+        ],
         "settings": {
-          "enable_bar": false,
-          "home_page_only": false,
+          "enable_bar": true,
+          "home_page_only": true,
           "background": "#000000",
           "text_color": "#ffffff",
           "content": "Announce something here",
@@ -105,9 +108,9 @@
         "type": "header",
         "settings": {
           "use_sticky_header": false,
-          "logo": "shopify://shop_images/Logo-Banner3.png",
-          "logo_max_width": 140,
-          "mobile_logo_max_width": 90,
+          "logo": "shopify://shop_images/logo.png",
+          "logo_max_width": 90,
+          "mobile_logo_max_width": 60,
           "navigation_menu": "main-menu",
           "navigation_style": "center",
           "enable_transparent_header": true,
@@ -523,6 +526,7 @@
           "image_ybYDiY": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/1730206372.png",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "Slide title",
