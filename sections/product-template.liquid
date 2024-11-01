@@ -29,7 +29,7 @@
           {%- assign share_url = shop.url | append: product.url -%}
           {%- assign twitter_text = product.title -%}
           {%- assign pinterest_description = product.description | strip_html | truncatewords: 15 | url_param_escape -%}
-          {%- assign pinterest_image = product.featured_image | img_url: 'large' | prepend: 'https:' -%}
+          {%- assign pinterest_image = product.featured_image | image_url: 'large' | prepend: 'https:' -%}
 
           <div class="Product__ShareList" aria-hidden="true">
             <a class="Product__ShareItem" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener">{%- include 'icon' with 'facebook' -%} Facebook</a>
