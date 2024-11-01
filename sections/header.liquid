@@ -1,4 +1,5 @@
 {%- assign use_transparent_header = false -%}
+{%- assign use_scroll_header = false -%}
 
 {%- if template == 'index' and section.settings.enable_transparent_header -%}
   {%- assign use_transparent_header = true -%}
@@ -385,7 +386,7 @@ HEADER CONTENT
     }
 
     lastScrollY = currentScrollY;
-  </script>
+</script>
 {%- endif -%}
 <script>
   document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
