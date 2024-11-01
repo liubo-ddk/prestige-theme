@@ -1,6 +1,6 @@
 <section class="Section" id="section-{{ section.id }}">
   {% if section.settings.mp4_video %}
-          <video controls="controls" style="max-width: 100%; height: auto;" autoplay playsinline muted>
+          <video style="max-width: 100%; height: auto;" autoplay playsinline muted>
           <source src="{{section.settings.mp4_video}}" type="video/mp4" />
           </video>
   {% else %}
@@ -55,10 +55,6 @@
           <iframe class="Image--lazyLoad" data-src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?autoplay=1&showinfo=0&controls=1&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
           {% elsif section.settings.video_url.type == 'vimeo' %}
           <iframe class="Image--lazyLoad" data-src="//player.vimeo.com/video/{{ section.settings.video_url.id }}?autoplay=1&portrait=0&byline=0&color={{ settings.accent_color | remove_first: '#' }}" frameborder="0"></iframe>
-          {% elsif section.settings.mp4_video %}
-          <video controls="controls" style="max-width: 100%; height: auto;" autoplay playsinline>
-          <source src="{{section.settings.mp4_video}}" type="video/mp4" />
-          </video>
         {% endif %}
       </div>
     </div>
