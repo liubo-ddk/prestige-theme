@@ -126,8 +126,8 @@
           "footer-0": {
             "type": "text",
             "settings": {
-              "title": "About the shop",
-              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
+              "title": "About LUMO",
+              "content": "<p>High-quality products by made in japan.<br/>Discover a curated selection of high-quality, Japan-made products at our online store. From premium household items to top-tier personal care, we bring the best of Japanese craftsmanship and innovation to elevate your everyday life.</p>",
               "show_social_media": true
             }
           },
@@ -141,7 +141,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Newsletter",
-              "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
+              "content": "<p>Subscribe to receive updates, access to exclusive deals, get <strong>10% OFF CODE</strong>.</p>"
             }
           }
         },
@@ -204,7 +204,7 @@
           "featured-collection-0": {
             "type": "collection",
             "settings": {
-              "collection": "rings",
+              "collection": "grocery-drinks-japanese-tea",
               "title": "",
               "grid_items_count": 8,
               "button_text": "View all products"
@@ -493,7 +493,7 @@
           "1533077274726-0": {
             "type": "collection",
             "settings": {
-              "collection": "bracelets",
+              "collection": "japan",
               "title": "",
               "grid_items_count": 8,
               "button_text": "View all products"
