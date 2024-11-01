@@ -101,9 +101,9 @@
           "background": "#000000",
           "text_color": "#ffffff",
           "content": "🚚 Free Worldwide Shipping Above $30 USD",
-          "link": "shopify://pages/contact",
-          "content2": "Announce something here",
-          "link2": "shopify://blogs/news"
+          "link": "shopify://collections/all",
+          "content2": "📦 7-Day Return & Exchange Policy",
+          "link2": "shopify://policies/refund-policy"
         }
       },
       "header": {
