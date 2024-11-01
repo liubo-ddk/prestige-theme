@@ -3,7 +3,7 @@
           <video controls="controls" style="max-width: 100%; height: auto;" autoplay playsinline>
           <source src="{{section.settings.mp4_video}}" type="video/mp4" />
           </video>
-    {% else %}
+  {% else %}
     <div class="FlexboxIeFix">
     {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
 
@@ -43,7 +43,7 @@
       </div>
     </div>
   </div>
-        {% endif %}
+{% endif %}
   
 </section>
 
@@ -71,6 +71,7 @@
   #section-{{ section.id }},
   #section-{{ section.id }} .Heading {
     color: {{ section.settings.text_color }};
+    text-align: center;
   }
 </style>
 
