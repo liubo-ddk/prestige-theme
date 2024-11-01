@@ -100,8 +100,10 @@
           "home_page_only": true,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "Announce something here",
-          "link": ""
+          "content": "🚚 Free Worldwide Shipping Above $30 USD",
+          "link": "",
+          "content2": "Announce something here",
+          "link2": ""
         }
       },
       "header": {

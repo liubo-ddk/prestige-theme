@@ -8,9 +8,22 @@
         <div class="AnnouncementBar__Wrapper">
           <p class="AnnouncementBar__Content Heading">
             {%- if section.settings.link -%}
-              <a href="{{ section.settings.link }}">{{ section.settings.content | escape }}</a>
+              <div class="content-wrapper">
+                <a href="{{ section.settings.link }}">{{ section.settings.content | escape }}</a>
+              </div>
             {%- else -%}
-              {{ section.settings.content | escape }}
+              <div class="content-wrapper">
+                {{ section.settings.content | escape }}
+              </div>
+            {%- endif -%}
+            {%- if section.settings.link2 -%}
+              <div class="content-wrapper">
+                <a href="{{ section.settings.link2 }}">{{ section.settings.content2 | escape }}</a>
+              </div>
+            {%- else -%}
+              <div class="content-wrapper">
+                {{ section.settings.content2 | escape }}
+              </div>
             {%- endif -%}
           </p>
         </div>
@@ -21,6 +34,47 @@
       #section-{{ section.id }} {
         background: {{ section.settings.background }};
         color: {{ section.settings.text_color }};
+      }
+      .AnnouncementBar__Content .content-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition: transform 1s;
+      }
+
+      .AnnouncementBar__Content .content-wrapper:nth-child(1) {
+        animation: showContent1 20s infinite;
+      }
+
+      .AnnouncementBar__Content .content-wrapper:nth-child(2) {
+        animation: showContent2 20s infinite;
+      }
+
+      @keyframes showContent1 {
+        0,
+        50% {
+          transform: rotateY(0deg);
+          opacity: 1;
+        }
+        50.01%,
+        100% {
+          transform: rotateY(180deg);
+          opacity: 0;
+        }
+      }
+
+      @keyframes showContent2 {
+        0,
+        50% {
+          transform: rotateY(-180deg);
+          opacity: 0;
+        }
+        50.01%,
+        100% {
+          transform: rotateY(0deg);
+          opacity: 1;
+        }
       }
     </style>
 
@@ -74,7 +128,7 @@
       }, {
         "type": "url",
         "id": "link2",
-        "label": "Link"
+        "label": "Link2"
       }
     ]
   }
