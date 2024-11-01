@@ -574,7 +574,7 @@
         "settings": {
           "show_fullscreen": true,
           "show_arrow": true,
-          "autoplay": false,
+          "autoplay": true,
           "cycle_speed": 5,
           "text_color": "#ffffff",
           "button_color": "#363636"
