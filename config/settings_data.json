@@ -97,7 +97,7 @@
         ],
         "settings": {
           "enable_bar": true,
-          "home_page_only": true,
+          "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
           "content": "🚚 Free Worldwide Shipping Above $30 USD",
