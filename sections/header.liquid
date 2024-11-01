@@ -49,6 +49,7 @@ HEADER CONTENT
   "navigationStyle": {{ section.settings.navigation_style | json }},
   "hasTransparentHeader": {% if use_transparent_header %}true{% else %}false{% endif %},
   "isSticky": {% if section.settings.use_sticky_header %}true{% else %}false{% endif %}
+  "useScrollHeader": {% if section.settings.use_scroll_header %}true{% else %}false{% endif %}
 }
 {%- endcapture -%}
 
