@@ -35,21 +35,27 @@
         background: {{ section.settings.background }};
         color: {{ section.settings.text_color }};
       }
-      .AnnouncementBar__Content .content-wrapper {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        transition: transform 1s;
-      }
+      .AnnouncementBar__Content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-      .AnnouncementBar__Content .content-wrapper:nth-child(1) {
-        animation: showContent1 10s infinite;
-      }
+.AnnouncementBar__Content .content-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 1s;
+}
 
-      .AnnouncementBar__Content .content-wrapper:nth-child(2) {
-        animation: showContent2 10s infinite;
-      }
+.AnnouncementBar__Content .content-wrapper:nth-child(1) {
+  animation: showContent1 10s infinite;
+}
+
+.AnnouncementBar__Content .content-wrapper:nth-child(2) {
+  animation: showContent2 10s infinite;
+}
 
       @keyframes showContent1 {
         0,
