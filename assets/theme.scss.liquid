@@ -8130,6 +8130,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   transition: background 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  /* transition: opacity 0.5s ease, transform 0.5s ease; */
 }
 
 .Header__Wrapper {
@@ -8143,10 +8144,9 @@ $vertical-spacing-two-products-per-row  : 0px;
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 15px 18px;
-  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.Header__Wrapper.hidden {
+.Header.hidden {
     opacity: 0;
     transform: translateY(-100%);
 }
