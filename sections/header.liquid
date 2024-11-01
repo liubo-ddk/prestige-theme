@@ -369,9 +369,8 @@ HEADER CONTENT
     }
   {%- endif -%}
 </style>
-
+{%- if use_scroll_header -%}
 <script>
-  document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
   let lastScrollY = window.scrollY;
   const header = document.querySelector('.Header');
   window.addEventListener('scroll', () => {
@@ -386,6 +385,10 @@ HEADER CONTENT
     }
 
     lastScrollY = currentScrollY;
+  </script>
+{%- endif -%}
+<script>
+  document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
 });
 </script>
 
