@@ -6,7 +6,7 @@
       data-section-type="announcement-bar">
       <div class="AnnouncementBar">
         <div class="AnnouncementBar__Wrapper">
-          <p class="AnnouncementBar__Content Heading">
+          <div class="AnnouncementBar__Content Heading">
             {%- if section.settings.link -%}
               <div class="content-wrapper">
                 <a href="{{ section.settings.link }}">{{ section.settings.content | escape }}</a>
@@ -25,7 +25,7 @@
                 {{ section.settings.content2 | escape }}
               </div>
             {%- endif -%}
-          </p>
+          </div>
         </div>
       </div>
     </section>
