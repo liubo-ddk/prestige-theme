@@ -1,5 +1,10 @@
 <section class="Section" id="section-{{ section.id }}">
-  <div class="FlexboxIeFix">
+  {% if section.settings.mp4_video %}
+          <video controls="controls" style="max-width: 100%; height: auto;" autoplay playsinline>
+          <source src="{{section.settings.mp4_video}}" type="video/mp4" />
+          </video>
+    {% else %}
+    <div class="FlexboxIeFix">
     {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
 
     <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %}" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1', format: 'jpg' }})"{% endif %}>
@@ -38,6 +43,8 @@
       </div>
     </div>
   </div>
+        {% endif %}
+  
 </section>
 
 <div id="modal-{{ section.id }}" class="Modal Modal--fullScreen Modal--videoContent" aria-hidden="true" role="dialog" data-scrollable>
