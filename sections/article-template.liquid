@@ -4,7 +4,7 @@
 {%- assign pinterest_image = article.image | img_url: '750x' | prepend: 'https:' -%}
 
 <article class="Article" data-section-id="{{ section.id }}" data-section-type="article">
-  <aside class="ArticleToolbar hidden-phone" style="display:hidden;"><!--  暂时不要 -->
+  <aside class="ArticleToolbar hidden-phone" style="display:hidden;">
     <div class="ArticleToolbar__Left">
       <span class="Heading Text--subdued u-h8 hidden-tablet">{{ 'blog.article.now_reading' | t }}</span>
       <span class="ArticleToolbar__ArticleTitle Heading u-h7">{{ article.title }}</span>
