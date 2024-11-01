@@ -110,6 +110,7 @@
         "type": "header",
         "settings": {
           "use_sticky_header": true,
+          "use_scroll_header": true,
           "logo": "shopify://shop_images/logo.png",
           "logo_max_width": 90,
           "mobile_logo_max_width": 60,
@@ -608,6 +609,36 @@
           "apply_overlay": true,
           "text_color": "#ffffff",
           "button_color": "#363636"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_article_image": true,
+          "show_date": true,
+          "show_category": true,
+          "show_author": false,
+          "show_share_buttons": false
+        }
+      },
+      "shop-now": {
+        "type": "shop-now",
+        "settings": {
+          "show_section": true,
+          "title": "Shop now",
+          "collection": "grocery-drinks-japanese-tea",
+          "grid_items_count": 6,
+          "show_product_info": true,
+          "show_color_swatch": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_rss": false,
+          "show_tags": false,
+          "show_featured_article": true,
+          "show_category": false
         }
       }
     },
