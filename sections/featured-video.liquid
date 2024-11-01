@@ -49,7 +49,7 @@
           {% elsif section.settings.video_url.type == 'vimeo' %}
           <iframe class="Image--lazyLoad" data-src="//player.vimeo.com/video/{{ section.settings.video_url.id }}?autoplay=1&portrait=0&byline=0&color={{ settings.accent_color | remove_first: '#' }}" frameborder="0"></iframe>
           {% elsif section.settings.mp4_video %}
-          <video controls="controls" style="max-width: 100%; height: auto;">
+          <video controls="controls" style="max-width: 100%; height: auto;" autoplay>
           <source src="{{section.settings.mp4_video}}" type="video/mp4" />
           </video>
         {% endif %}
