@@ -346,17 +346,16 @@
           "blog-0": {
             "type": "blog",
             "settings": {
-              "blog": ""
+              "blog": "blog"
             }
           }
         },
         "block_order": [
           "blog-0"
         ],
-        "disabled": true,
         "settings": {
           "subheading": "",
-          "title": "Featured article",
+          "title": "New Blog",
           "show_category": false,
           "button_link": "",
           "button_text": "View all articles"
@@ -368,8 +367,9 @@
           "look-0": {
             "type": "look",
             "settings": {
+              "image": "shopify://shop_images/P-2-GRPS-TKOBAN-Tokyo_20Banana_20Cake_20_28Original_20from_20Japan_29_208_20Pieces_20Box.jpg",
               "dot_style": "light",
-              "product_1": "",
+              "product_1": "tokyo-banana-cake-original-from-japan-8-pieces-box",
               "product_1_horizontal_position": 30,
               "product_1_vertical_position": 40,
               "product_2": "",
@@ -383,8 +383,9 @@
           "look-1": {
             "type": "look",
             "settings": {
+              "image": "shopify://shop_images/Meiji-Amino-Collagen-Powder-Premium-196g-3-2024-05-29T14_3A17_3A05.123Z.webp",
               "dot_style": "light",
-              "product_1": "",
+              "product_1": "meiji-amino-collagen-powder-premium-196g",
               "product_1_horizontal_position": 25,
               "product_1_vertical_position": 45,
               "product_2": "",
@@ -394,11 +395,28 @@
               "product_3_horizontal_position": 65,
               "product_3_vertical_position": 60
             }
+          },
+          "look_GeLXAm": {
+            "type": "look",
+            "settings": {
+              "image": "shopify://shop_images/1730206372.png",
+              "dot_style": "light",
+              "product_1": "shinchaen-premium-matcha-powder-500g",
+              "product_1_horizontal_position": 15,
+              "product_1_vertical_position": 15,
+              "product_2": "",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85
+            }
           }
         },
         "block_order": [
           "look-0",
-          "look-1"
+          "look-1",
+          "look_GeLXAm"
         ],
         "settings": {
           "subheading": "Shop",
@@ -601,8 +619,8 @@
       "collection-list",
       "featured-product",
       "timeline",
-      "blog-posts",
-      "shop-the-look"
+      "shop-the-look",
+      "blog-posts"
     ]
   },
   "presets": {
