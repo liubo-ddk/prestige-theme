@@ -109,64 +109,7 @@
     {% include 'microdata-schema' %}
   </head>
 
-  <body class="prestige--v1 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
-    <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
-    <span class="LoadingBar"></span>
-    <div class="PageOverlay"></div>
-    <div class="PageTransition"></div>
-
-    {% section 'popup' %}
-    {% section 'sidebar-menu' %}
-
-    {%- if template != 'cart' -%}
-      {% include 'cart-drawer' %}
-    {%- endif -%}
-
-    <div class="PageContainer">
-      {% section 'announcement' %}
-      {% section 'header' %}
-
-      <main id="main" role="main">
+  <body class="prestige--v1 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}"><main id="main" role="main">
         {{ content_for_layout }}
-      </main>
-
-      {% section 'footer' %}
-    </div>
-
-    {%- comment -%}
-    --------------------------------------------------------------------------------------------------------------------
-    SEARCH FORM (available globally)
-    --------------------------------------------------------------------------------------------------------------------
-    {%- endcomment -%}
-
-    <div id="Search" class="Search Modal Modal--fullScreen" aria-hidden="true" data-scrollable>
-      <div class="Search__SearchBar">
-        <form action="/search" name="GET" role="search" class="Search__Form">
-          <input type="search" class="Search__Input Heading" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="{{ 'search.general.input_placeholder' | t }}" autofocus>
-          <input type="hidden" name="type" value="product">
-        </form>
-
-        <button class="Search__Close Link Link--primary" data-action="close-modal">{% include 'icon' with 'close' %}</button>
-      </div>
-
-      <div class="Search__Results">
-        {%- if settings.search_mode != 'product' -%}
-          <div class="PageLayout PageLayout--breakLap">
-            <div class="PageLayout__Section"></div>
-            <div class="PageLayout__Section PageLayout__Section--secondary"></div>
-          </div>
-        {%- endif -%}
-      </div>
-    </div>
-  
-<!-- BEAE-FOOTER --> 
-{%- if content_for_layout contains 'beae-builder' -%}
-{%- render 'beae_footer' -%}
-{%- endif -%}
-<!-- END BEAE-FOOTER -->
-<!-- BEAE-ANALYTICS --> 
-{%- if content_for_layout contains 'beae-builder' -%}
-{%- render 'beae_analytic_helper' -%}
-{%- endif -%}
-<!-- END BEAE-ANALYTICS --></body>
+      </main></body>
 </html>
