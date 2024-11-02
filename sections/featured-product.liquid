@@ -94,26 +94,6 @@
             {%- endif -%}
           </div>
 
-          <div class="ProductForm">
-            {%- if section.settings.show_inventory_quantity -%}
-              <p class="ProductForm__Inventory Text--subdued">
-                {%- if section.settings.inventory_quantity_threshold == 0 -%}
-                  {{- 'product.form.inventory_quantity_count' | t: count: 5 -}}
-                {%- else -%}
-                  {{- 'product.form.low_inventory_quantity_count' | t: count: section.settings.inventory_quantity_threshold -}}
-                {%- endif -%}
-              </p>
-            {%- endif -%}
-
-            <button type="button" class="ProductForm__AddToCart Button Button--primary Button--full">
-              <span class="Button__PrimaryState">
-                  <span>{{ 'product.form.add_to_cart' | t }}</span>
-                  <span class="Button__SeparatorDot"></span>
-                  <span data-money-convertible>{{ 4500 | money_without_trailing_zeros }}</span>
-              </span>
-            </button>
-          </div>
-
           {%- if section.settings.show_description and section.settings.show_description_after_add_to_cart -%}
             <div class="ProductMeta__Description Rte">
               {{ 'home_page.onboarding.product_description' | t }}
