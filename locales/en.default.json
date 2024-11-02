@@ -8,6 +8,13 @@
  * ------------------------------------------------------------
  */
 {
+  "404": {
+    "general": {
+      "title": "404",
+      "content": "The page you are looking for cannot be found.",
+      "button": "Back to homepage"
+    }
+  },
   "general": {
     "meta": {
       "tags": "Tagged \"{{ tags }}\"",
@@ -83,13 +90,6 @@
         "one": "1 result for \"{{terms}}\"",
         "other": "{{count}} results for \"{{terms}}\""
       }
-    }
-  },
-  "404": {
-    "general": {
-      "title": "404",
-      "content": "The page you are looking for cannot be found.",
-      "button": "Back to homepage"
     }
   },
   "home_page": {
@@ -281,7 +281,7 @@
       "note_placeholder": "How can we help you?",
       "free_shipping": "You are eligible to free shipping!",
       "free_shipping_remaining_html": "Spend {{remaining_amount}} and get free shipping!",
-      "shipping_and_taxes_notice": "Shipping & taxes calculated at checkout",
+      "shipping_and_taxes_notice": "Spend {{remaining_amount}} and get free shipping!",
       "total": "Total",
       "currency_notice": "All orders are processed in shop's currency, which is {{shop_currency}}. The content of your cart may be displayed in another currency, at the most current exchange rate.",
       "checkout": "Checkout"
@@ -406,5 +406,55 @@
     "month_day_year": "%B %d, %Y",
     "month_day_year_short": "%m/%d/%Y",
     "month_day_year_time": "%B %d, %Y at %I:%M%p"
+  },
+  "gempages": {
+    "Carousel": {
+      "no_slider": "No Slider"
+    },
+    "Newsletter": {
+      "err_msg_default": "Can’t send email. Please try again later.",
+      "success_msg_default": "Thanks for contacting us. We'll get back to you as soon as possible."
+    },
+    "IconListV2": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconList": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconListHoz": {
+      "icons_not_found": "Icons not found"
+    },
+    "Product": {
+      "product_not_found": "Product not found"
+    },
+    "ProductList": {
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
+    },
+    "ProductTitle": {
+      "product_not_found": "Product Not Found"
+    },
+    "ProductVariants": {
+      "please_select": "Please select an option"
+    },
+    "StockCounter": {
+      "let_buy_now": "<mark>HURRY!</mark> LET BUY NOW"
+    }
+  },
+  "sections": {
+    "beae-quickview-default": {
+      "be1203385433_html": "Pickup available at {{ location_name }}",
+      "be1121680012_html": "Pickup currently unavailable at {{ location_name }}",
+      "be1358949576_html": "View store info",
+      "be260978430_html": "Check availability at other stores",
+      "be1220360021_html": "Quantity",
+      "be649020154_html": "Add to cart",
+      "be28375103_html": "Out of stock",
+      "be1182278043_html": "Added to cart",
+      "be1538394658_html": "Sold out",
+      "be1427617666_html": "Added to cart successfully",
+      "be719299147_html": "Choose options"
+    }
   }
 }
