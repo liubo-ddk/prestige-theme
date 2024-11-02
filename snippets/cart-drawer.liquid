@@ -18,7 +18,6 @@
 
   <form class="Cart Drawer__Content" action="/cart" method="POST" novalidate>
     <div class="Drawer__Main" data-scrollable>
-          {{ settings.cart_show_free_shipping_threshold | t }}
       {%- if settings.cart_show_free_shipping_threshold -%}
         {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
 
