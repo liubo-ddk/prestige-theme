@@ -87,14 +87,7 @@
               <span class="ProductMeta__Price Price Text--subdued u-h4" data-money-convertible>{{ 4500 | money_without_trailing_zeros }}</span>
             </div>
 
-            {%- if section.settings.show_description and section.settings.show_description_after_add_to_cart == false -%}
-              <div class="ProductMeta__Description Rte">
-                {{ 'home_page.onboarding.product_description' | t }}
-              </div>
-            {%- endif -%}
-          </div>
-
-          <div class="ProductForm">
+          <div class="ProductForm Test">
             {%- if section.settings.show_inventory_quantity -%}
               <p class="ProductForm__Inventory Text--subdued">
                 {%- if section.settings.inventory_quantity_threshold == 0 -%}
@@ -112,6 +105,13 @@
                   <span data-money-convertible>{{ 4500 | money_without_trailing_zeros }}</span>
               </span>
             </button>
+          </div>
+
+            {%- if section.settings.show_description and section.settings.show_description_after_add_to_cart == false -%}
+              <div class="ProductMeta__Description Rte">
+                {{ 'home_page.onboarding.product_description' | t }}
+              </div>
+            {%- endif -%}
           </div>
 
           {%- if section.settings.show_description and section.settings.show_description_after_add_to_cart -%}
