@@ -30,7 +30,7 @@
   </div>
   
   {%- include 'product-form' -%}
-
+  <div>Description</div>
   {%- if show_description and section.settings.description_below_add_to_cart == false and product.description != blank -%}
     <div class="ProductMeta__Description Rte">
       {{ product.description }}
