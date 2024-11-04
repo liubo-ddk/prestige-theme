@@ -548,14 +548,15 @@
           "image_ybYDiY": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/1730206372.png",
+              "image": "shopify://shop_images/1730702999018.png",
+              "mobile_image": "shopify://shop_images/5_7.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
-              "subheading": "Slide title",
-              "title": "Tell your story",
-              "button_1_text": "Test",
+              "subheading": "marukyu koyamaen",
+              "title": "Uji Matcha on sale",
+              "button_1_text": "Matcha Collection",
               "button_1_link": "",
-              "button_2_text": "Test Btn",
+              "button_2_text": "traditional Tools",
               "button_2_link": ""
             }
           },
