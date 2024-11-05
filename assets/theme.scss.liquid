@@ -6137,7 +6137,7 @@ select::-ms-expand {
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 
   @supports (--css: variables) {
-    top: calc(var(--use-sticky-header, 0)* var(--off-hide-header) * var(--header-height));
+    top: calc(var(--use-sticky-header, 0)* var(--off-hide-header,1) * var(--header-height));
   }
 }
 
