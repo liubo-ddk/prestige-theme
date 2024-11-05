@@ -6137,7 +6137,7 @@ select::-ms-expand {
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 
   @supports (--css: variables) {
-    top: calc(var(--use-sticky-header, 0) * var(--header-height));
+    top: calc(var(--use-sticky-header, 0)* var(--off-hide-header) * var(--header-height));
   }
 }
 
@@ -7032,7 +7032,7 @@ select::-ms-expand {
   top: $header-base-height;
 
   @supports (--css: variables) {
-    top: calc(var(--header-height) * var(--use-sticky-header, 0) * var(--auto-hide-header));
+    top: calc(var(--header-height) * var(--use-sticky-header, 0) * var(--off-hide-header));
   }
 }
 
@@ -7395,7 +7395,7 @@ select::-ms-expand {
 
   @supports (--css: variables) {
     .CollectionInner__Sidebar--withTopToolbar {
-      top: calc(var(--header-height) * var(--use-sticky-header, 0) + 105px);
+      top: calc(var(--header-height) * var(--use-sticky-header, 0)* var(--off-hide-header) + 105px);
     }
   }
 
