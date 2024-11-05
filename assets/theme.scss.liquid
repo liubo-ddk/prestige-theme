@@ -3981,15 +3981,16 @@ select::-ms-expand {
  */
 
 .QuantitySelector {
-  display: -webkit-inline-box;
+  /* display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-flex; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid $border-color;
   white-space: nowrap;
-
+  display: block;
+  text-align: center;
   svg {
     width: 10px;
     height: 10px;
@@ -4026,7 +4027,7 @@ select::-ms-expand {
   }
 
   .QuantitySelector__Button {
-    padding: 10px 20px;
+    padding: 10px 60px;
   }
 
   svg {
