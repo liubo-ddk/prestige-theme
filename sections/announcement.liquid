@@ -37,13 +37,15 @@
       }
       .AnnouncementBar__Content .content-wrapper {
         position: absolute;
-  width: 100%;
-  top: 5px;
-  left: 0;
-  opacity: 0;
-  transform: translateX(100%);
-  animation: slideAnimation 10s infinite;
-}
+        width: 100%;
+        top: 5px;
+        left: 0;
+        opacity: 0;
+        transform: translateX(100%);
+        animation: slideAnimation 10s infinite;
+        white-space: nowrap;
+        overflow: hidden;
+      }
 
 /* 第一个内容的动画延迟 */
 .AnnouncementBar__Content .content-wrapper:nth-child(1) {
