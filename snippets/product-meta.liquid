@@ -19,6 +19,11 @@
       <a href="{{ product.url }}">{{ product.title }}</a>
     {%- endif -%}
   </h1>
+  <!-- Start of Judge.me code --> 
+  <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}'> 
+    {{ product.metafields.judgeme.badge }} 
+  </div> 
+  <!-- End of Judge.me code -->
 
   <div class="ProductMeta__PriceList Heading">
     {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
