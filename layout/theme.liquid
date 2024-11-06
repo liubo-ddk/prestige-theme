@@ -102,12 +102,16 @@
     {%- endif -%}
 
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,Element.prototype.closest,Element.prototype.remove,Element.prototype.classList,Array.prototype.includes,Array.prototype.fill,Object.assign,CustomEvent,IntersectionObserver,IntersectionObserverEntry" defer></script>
-    <script src="{{ 'libs.min.js' | asset_url }}" defer></script>
+    <!-- <script src="{{ 'libs.min.js' | asset_url }}" defer></script> -->
     <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
 
     {% include 'microdata-schema' %}
-  </head>
+  {% capture the_snippet_beae-global-theme-setting %}{% include 'beae-global-theme-setting' %}{% endcapture %}
+            {% unless the_snippet_beae-global-theme-setting contains 'Liquid error' %}
+                {{ the_snippet_beae-global-theme-setting }}
+            {% endunless %}
+</head>
 
   <body class="prestige--v1 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
     <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
