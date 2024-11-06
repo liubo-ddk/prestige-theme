@@ -550,7 +550,7 @@
             "settings": {
               "image": "shopify://shop_images/1730702999018.png",
               "mobile_image": "shopify://shop_images/300_440.jpg",
-              "apply_overlay": true,
+              "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "marukyu koyamaen",
               "title": "Uji Matcha on sale",
