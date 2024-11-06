@@ -1,6 +1,6 @@
 <section class="Section" id="section-{{ section.id }}">
   {% if section.settings.mp4_video %}
-          <video style="max-width: 100%; height: auto;" autoplay playsinline muted>
+          <video style="max-width: 100%; height: auto;" preload="none" autoplay playsinline muted>
           <source src="{{section.settings.mp4_video}}" type="video/mp4" />
           </video>
   {% else %}
