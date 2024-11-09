@@ -92,9 +92,7 @@
       },
       "announcement": {
         "type": "announcement",
-        "custom_css": [
-
-        ],
+        "custom_css": [],
         "settings": {
           "enable_bar": true,
           "home_page_only": false,
@@ -474,7 +472,7 @@
           "show_quantity_selector": true,
           "show_inventory_quantity": false,
           "inventory_quantity_threshold": 3,
-          "show_payment_button": false,
+          "show_payment_button": true,
           "image_size": "small",
           "enable_image_zoom": true,
           "show_thumbnails": true,
@@ -631,14 +629,12 @@
       "13768625480086291342": {
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
