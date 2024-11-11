@@ -494,14 +494,14 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "show_popup": false,
-          "show_only_on_index": true,
-          "show_only_for_visitors": true,
+          "show_popup": true,
+          "show_only_on_index": false,
+          "show_only_for_visitors": false,
           "show_only_once": true,
-          "title": "Popup",
-          "content": "<p>You can use this popup to display some useful information to your customers.</p>",
+          "title": "2024 Black Friday!",
+          "content": "<p><strong>Free shipping above ＄25！</strong></p><p><strong>10% off above＄50！</strong></p><p><strong>15% off above ＄100！</strong></p><p><strong>20% off above ＄150！</strong></p><p><strong>No codes are necessary</strong>—your discount will be automatically applied at checkout once the qualifying purchase amount is reached.</p><p></p>",
           "show_newsletter": true,
-          "apparition_delay": 5
+          "apparition_delay": 2
         }
       },
       "1533077274726": {
