@@ -203,7 +203,7 @@
           "featured-collection-0": {
             "type": "collection",
             "settings": {
-              "collection": "grocery-drinks-japanese-tea",
+              "collection": "marukyu-koyamaen-matcha",
               "title": "",
               "grid_items_count": 8,
               "button_text": "View all products"
@@ -553,7 +553,7 @@
               "subheading": "marukyu koyamaen",
               "title": "Uji Matcha on sale",
               "button_1_text": "Matcha Collection",
-              "button_1_link": "shopify://collections/grocery-drinks-japanese-tea",
+              "button_1_link": "shopify://collections/marukyu-koyamaen-matcha",
               "button_2_text": "Traditional　tools",
               "button_2_link": "shopify://collections/matcha-tools"
             }
@@ -597,7 +597,7 @@
         "settings": {
           "show_section": true,
           "title": "Shop now",
-          "collection": "grocery-drinks-japanese-tea",
+          "collection": "marukyu-koyamaen-matcha",
           "grid_items_count": 6,
           "show_product_info": true,
           "show_color_swatch": true
