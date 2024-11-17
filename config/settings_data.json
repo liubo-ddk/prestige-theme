@@ -181,11 +181,25 @@
               "button_2_text": "",
               "button_2_link": ""
             }
+          },
+          "image_FgApL4": {
+            "type": "image",
+            "settings": {
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
           }
         },
         "block_order": [
           "slide-0",
-          "slide-1"
+          "slide-1",
+          "image_FgApL4"
         ],
         "disabled": true,
         "settings": {
@@ -208,20 +222,10 @@
               "grid_items_count": 8,
               "button_text": "View all products"
             }
-          },
-          "collection_yjTkzB": {
-            "type": "collection",
-            "settings": {
-              "collection": "matcha-tools",
-              "title": "",
-              "grid_items_count": 8,
-              "button_text": "View all products"
-            }
           }
         },
         "block_order": [
-          "featured-collection-0",
-          "collection_yjTkzB"
+          "featured-collection-0"
         ],
         "settings": {
           "title": "Featured collection",
@@ -238,10 +242,10 @@
           "collection-0": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "matcha-tools",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
+              "subheading": "",
               "title": "",
               "button_text": "View products",
               "apply_overlay": true
@@ -250,23 +254,24 @@
           "collection-1": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "marukyu-koyamaen-matcha",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
+              "subheading": "",
               "title": "",
               "button_text": "View products",
               "apply_overlay": true
             }
           },
-          "collection-2": {
+          "collection_BzDgL4": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "matcha-collection",
+              "image": "shopify://shop_images/30g_1284x1284_bab68b51-da07-4749-8924-a3e662d05b09_1.png",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "",
+              "subheading": "",
+              "title": "Other Matcha",
               "button_text": "View products",
               "apply_overlay": true
             }
@@ -275,9 +280,8 @@
         "block_order": [
           "collection-0",
           "collection-1",
-          "collection-2"
+          "collection_BzDgL4"
         ],
-        "disabled": true,
         "settings": {
           "image_size": "normal",
           "add_spacing": true,
@@ -599,10 +603,10 @@
     "content_for_index": [
       "slideshow_dGQPRd",
       "featured-collections",
+      "collection-list",
       "1533077274726",
       "featured_video_64kzgi",
       "slideshow",
-      "collection-list",
       "featured-product",
       "timeline",
       "shop-the-look",
