@@ -263,15 +263,14 @@
               "apply_overlay": true
             }
           },
-          "collection_BzDgL4": {
+          "collection_bmq7Cf": {
             "type": "collection",
             "settings": {
-              "collection": "matcha-collection",
-              "image": "shopify://shop_images/30g_1284x1284_bab68b51-da07-4749-8924-a3e662d05b09_1.png",
+              "collection": "japanese-knives",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "",
-              "title": "Other Matcha",
+              "subheading": "Sub-heading",
+              "title": "",
               "button_text": "View products",
               "apply_overlay": true
             }
@@ -280,7 +279,7 @@
         "block_order": [
           "collection-0",
           "collection-1",
-          "collection_BzDgL4"
+          "collection_bmq7Cf"
         ],
         "settings": {
           "image_size": "normal",
