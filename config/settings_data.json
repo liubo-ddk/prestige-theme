@@ -510,6 +510,7 @@
       },
       "featured_video_64kzgi": {
         "type": "featured-video",
+        "disabled": true,
         "settings": {
           "section_size": "large",
           "text_color": "#ffffff",
