@@ -214,10 +214,10 @@
       "featured-collections": {
         "type": "featured-collections",
         "blocks": {
-          "featured-collection-0": {
+          "collection_tJNgVV": {
             "type": "collection",
             "settings": {
-              "collection": "marukyu-koyamaen-matcha",
+              "collection": "marukyu-koyamaen-master-collection",
               "title": "",
               "grid_items_count": 8,
               "button_text": "View all products"
@@ -225,7 +225,7 @@
           }
         },
         "block_order": [
-          "featured-collection-0"
+          "collection_tJNgVV"
         ],
         "settings": {
           "title": "Featured collection",
@@ -532,9 +532,9 @@
               "content_position": "bottomLeft",
               "subheading": "marukyu koyamaen",
               "title": "Uji Matcha on sale",
-              "button_1_text": "Matcha Collection",
+              "button_1_text": "Tradtional Brands",
               "button_1_link": "shopify://collections/marukyu-koyamaen-matcha",
-              "button_2_text": "Traditional　tools",
+              "button_2_text": "Teamasters Brands",
               "button_2_link": "shopify://collections/matcha-tools"
             }
           }
