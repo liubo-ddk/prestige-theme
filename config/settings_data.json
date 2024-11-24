@@ -643,7 +643,7 @@
       },
       "1561686393582567663": {
         "type": "shopify://apps/madgic-order-limit/blocks/limit-purchase/ad83b8ff-f1a1-4eae-9b2a-b6fe28459d93",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     }
