@@ -598,6 +598,10 @@
           "show_shipping_estimator": true,
           "shipping_estimator_default_country": "United States"
         }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {}
       }
     },
     "content_for_index": [
@@ -636,6 +640,11 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "1561686393582567663": {
+        "type": "shopify://apps/madgic-order-limit/blocks/limit-purchase/ad83b8ff-f1a1-4eae-9b2a-b6fe28459d93",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
