@@ -1,20 +1,11 @@
 {%- comment -%}This snippet structures the micro-data using JSON-LD specification{%- endcomment -%}
 
-{%- if template.name == 'product' -%}
-  {%- capture main_entity_microdata -%}
-    {{ product | structured_data }}
-  {%- endcapture -%}
-{%- elsif template.name == 'article' -%}
-  {%- capture main_entity_microdata -%}
-    {{ article | structured_data }}
-  {%- endcapture -%}
-{%- endif -%}
-
 {% if main_entity_microdata != blank %}
   <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    {{ main_entity_microdata }}
-  }
+    {%- if template.name == 'product' -%}
+      {{ product | structured_data }}
+    {%- elsif template.name == 'article' -%}
+        {{ article | structured_data }}
+    {%- endif -%}
   </script>
 {% endif %}
