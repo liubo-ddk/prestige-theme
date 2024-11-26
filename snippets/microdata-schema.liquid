@@ -1,11 +1,9 @@
 {%- comment -%}This snippet structures the micro-data using JSON-LD specification{%- endcomment -%}
 
-{% if main_entity_microdata != blank %}
-  <script type="application/ld+json">
+<script type="application/ld+json">
     {% if template.name == 'product' %}
       {{ product | structured_data }}
     {% elsif template.name == 'article' %}
         {{ article | structured_data }}
     {% endif %}
-  </script>
-{% endif %}
+</script>
