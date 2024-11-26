@@ -9,8 +9,36 @@
   "useAjaxCart": {% if settings.cart_type == 'drawer' %}true{% else %}false{% endif %}
 }
 {%- endcapture -%}
+{%- assign review_rating = false -%}
+{% if product.metafields.spr.reviews %}
+  {% capture review_data %}{{ product.metafields.spr.reviews }}{% endcapture %}
 
-<section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
+  {%- assign rating_keyword = '"ratingValue":' -%}
+  {%- assign rd_a1 = review_data | split: rating_keyword -%}
+  {%- assign rd_a2 = rd_a1[1] | split: ',' -%}
+  {%- assign rd_a3 = rd_a2[0] | replace: '"', '' -%}
+  {%- assign review_rating = rd_a3 | plus: 1 | minus: 1 -%}
+
+  {%- assign count_keyword = '"reviewCount":' -%}
+  {%- assign rd_a1 = review_data | split: count_keyword -%}
+  {%- assign rd_a2 = rd_a1[1] | split: ',' -%}
+  {%- assign rd_a3 = rd_a2[0] | replace: '"', '' -%}
+  {%- assign review_count = rd_a3 | plus: 1 | minus: 1 -%}
+{% endif %}
+
+{%- if review_rating %}
+  <div itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating">
+    <meta itemprop="ratingValue" content="{{ review_rating }}">
+    <meta itemprop="reviewCount" content="{{ review_count }}">
+  </div>
+{%- endif -%}
+
+<section
+  class="Product Product--{{ section.settings.image_size }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="product"
+  data-section-settings="{{ section_settings }}"
+>
   <div class="Product__Wrapper">
     {%- capture action_list_items -%}
       {%- if section.settings.enable_image_zoom -%}
@@ -41,9 +69,9 @@
     {%- endcapture -%}
 
     {%- comment -%}
-    --------------------------------------------------------------------------------------------------------------------
-    PRODUCT GALLERY
-    --------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------
+      PRODUCT GALLERY
+      --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
 
     {%- assign initial_image_id = product.featured_image.id -%}
@@ -110,7 +138,7 @@
 
         {%- if action_list_items != blank -%}
           <div class="Product__ActionList hidden-lap-and-up">
-          {{ action_list_items }}
+            {{ action_list_items }}
           </div>
         {%- endif -%}
 
@@ -129,11 +157,22 @@
                     {%- assign is_video = true -%}
                   {%- endif -%}
 
-                  <a href="#Image{{ image.id }}" class="Product__SlideshowNavImage {% if is_video %}Product__SlideshowNavImage--video{% endif %} AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ image.aspect_ratio }}">
+                  <a
+                    href="#Image{{ image.id }}"
+                    class="Product__SlideshowNavImage {% if is_video %}Product__SlideshowNavImage--video{% endif %} AspectRatio {% if forloop.first %}is-selected{% endif %}"
+                    style="--aspect-ratio: {{ image.aspect_ratio }}"
+                  >
                     <img src="{{ image | img_url: '160x' }}">
 
                     {%- if is_video -%}
-                      <button type="button" class="Product__SlideshowNavPlay" data-action="play-video" aria-label="{{ 'home_page.featured_video.play' | t }}">{% include 'icon' with 'play' %}</button>
+                      <button
+                        type="button"
+                        class="Product__SlideshowNavPlay"
+                        data-action="play-video"
+                        aria-label="{{ 'home_page.featured_video.play' | t }}"
+                      >
+                        {% include 'icon' with 'play' %}
+                      </button>
                     {%- endif -%}
                   </a>
                 {%- endfor -%}
@@ -148,7 +187,10 @@
                   {%- continue -%}
                 {%- endif -%}
 
-                <a href="#Image{{ image.id }}" class="Product__SlideshowNavDot {% if forloop.first %}is-selected{% endif %}"></a>
+                <a
+                  href="#Image{{ image.id }}"
+                  class="Product__SlideshowNavDot {% if forloop.first %}is-selected{% endif %}"
+                ></a>
               {%- endfor -%}
             </div>
           </div>
@@ -166,7 +208,10 @@
         }
         {%- endcapture -%}
 
-        <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
+        <div
+          class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel"
+          data-flickity-config="{{ flickity_options }}"
+        >
           {{ slideshow_images }}
         </div>
       </div>
@@ -224,8 +269,14 @@
           {%- if product_aside != blank and image_count > 0 -%}
             <div class="Product__QuickNav hidden-pocket">
               <div class="Product__QuickNavWrapper">
-                <a href="#ProductAside" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_info' | t }} {% include 'icon' with 'select-arrow-right' %}</a>
-                <a href="#ProductGallery" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_images' | t }} {% include 'icon' with 'select-arrow-right' %}</a>
+                <a href="#ProductAside" class="Heading Link Link--secondary u-h7">
+                  {{- 'product.form.view_info' | t }}
+                  {% include 'icon' with 'select-arrow-right' -%}
+                </a>
+                <a href="#ProductGallery" class="Heading Link Link--secondary u-h7">
+                  {{- 'product.form.view_images' | t }}
+                  {% include 'icon' with 'select-arrow-right' -%}
+                </a>
               </div>
             </div>
           {%- endif -%}
@@ -248,9 +299,9 @@
   </div>
 
   {%- comment -%}
-  --------------------------------------------------------------------------------------------------------------------
-  OFF SCREEN ELEMENTS
-  --------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------
+    OFF SCREEN ELEMENTS
+    --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
   {{- product_popovers -}}
@@ -258,11 +309,11 @@
 </section>
 
 {%- comment -%}
---------------------------------------------------------------------------------------------------------------------
-FEATURED IMAGE
+  --------------------------------------------------------------------------------------------------------------------
+  FEATURED IMAGE
 
-We allow merchants to use one image as a "featured image" by adding the alt tag "featured"
---------------------------------------------------------------------------------------------------------------------
+  We allow merchants to use one image as a "featured image" by adding the alt tag "featured"
+  --------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 {%- for image in product.images -%}
@@ -279,11 +330,21 @@ We allow merchants to use one image as a "featured image" by adding the alt tag 
   {%- assign mobile_featured_image = mobile_featured_image | default: desk_featured_image -%}
   {%- assign desk_featured_image = desk_featured_image | default: mobile_featured_image -%}
 
-  <div class="Product__FeatureImageWrapper" style="background: url({{ desk_featured_image | img_url: '1x1', format: 'jpg' }})">
-    <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut hide-no-js" data-expand="-25" data-bgset="{{ mobile_featured_image | img_url: '750x850' }} [(max-width: 640px)] | {{ desk_featured_image | img_url: '1500x' }}"></div>
+  <div
+    class="Product__FeatureImageWrapper"
+    style="background: url({{ desk_featured_image | img_url: '1x1', format: 'jpg' }})"
+  >
+    <div
+      class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut hide-no-js"
+      data-expand="-25"
+      data-bgset="{{ mobile_featured_image | img_url: '750x850' }} [(max-width: 640px)] | {{ desk_featured_image | img_url: '1500x' }}"
+    ></div>
 
     <noscript>
-      <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }}" style="background-image: url({{ desk_featured_image | img_url: '1500x' }})"></div>
+      <div
+        class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }}"
+        style="background-image: url({{ desk_featured_image | img_url: '1500x' }})"
+      ></div>
     </noscript>
   </div>
 
@@ -309,39 +370,56 @@ We allow merchants to use one image as a "featured image" by adding the alt tag 
 {%- endif -%}
 
 {%- comment -%}
---------------------------------------------------------------------------------------------------------------------
-MODALS
+  --------------------------------------------------------------------------------------------------------------------
+  MODALS
 
-If we have some videos, we implement them as modal
---------------------------------------------------------------------------------------------------------------------
+  If we have some videos, we implement them as modal
+  --------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 {%- for image in product.images -%}
   {%- if image.alt contains 'youtube.com/embed' or image.alt contains 'player.vimeo.com' -%}
-    <div id="modal-video-{{ image.id }}" class="Modal Modal--fullScreen Modal--videoContent" aria-hidden="true" role="dialog" data-scrollable>
+    <div
+      id="modal-video-{{ image.id }}"
+      class="Modal Modal--fullScreen Modal--videoContent"
+      aria-hidden="true"
+      role="dialog"
+      data-scrollable
+    >
       <div class="Modal__Content">
         <div class="Container Container--narrow">
           <div class="VideoWrapper">
             {% if image.alt contains 'youtube.com/embed' %}
-              <iframe class="Image--lazyLoad" data-src="{{ image.alt }}?autoplay=1&showinfo=0&controls=1&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+              <iframe
+                class="Image--lazyLoad"
+                data-src="{{ image.alt }}?autoplay=1&showinfo=0&controls=1&rel=0&modestbranding=1"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
             {% else %}
-              <iframe class="Image--lazyLoad" data-src="{{ image.alt }}?autoplay=1&portrait=0&byline=0&color={{ settings.accent_color | remove_first: '#' }}" frameborder="0"></iframe>
+              <iframe
+                class="Image--lazyLoad"
+                data-src="{{ image.alt }}?autoplay=1&portrait=0&byline=0&color={{ settings.accent_color | remove_first: '#' }}"
+                frameborder="0"
+              ></iframe>
             {% endif %}
           </div>
         </div>
       </div>
 
-      <button class="Modal__Close Modal__Close--outside" data-animate-bottom data-action="close-modal">{% include 'icon' with 'close' %}</button>
+      <button class="Modal__Close Modal__Close--outside" data-animate-bottom data-action="close-modal">
+        {% include 'icon' with 'close' %}
+      </button>
     </div>
   {%- endif -%}
 {%- endfor -%}
 
 {%- comment -%}
---------------------------------------------------------------------------------------------------------------------
-PHOTO SWIPE
+  --------------------------------------------------------------------------------------------------------------------
+  PHOTO SWIPE
 
-This is the root container for the zoom functionality. Must not be removed, as order element is important.
---------------------------------------------------------------------------------------------------------------------
+  This is the root container for the zoom functionality. Must not be removed, as order element is important.
+  --------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 {%- if section.settings.enable_image_zoom -%}
@@ -351,7 +429,6 @@ This is the root container for the zoom functionality. Must not be removed, as o
 
     <!-- Slides wrapper with overflow:hidden. -->
     <div class="pswp__scroll-wrap">
-
       <!-- Container that holds slides. Do not remove as content is dynamically added -->
       <div class="pswp__container">
         <div class="pswp__item"></div>
@@ -361,9 +438,27 @@ This is the root container for the zoom functionality. Must not be removed, as o
 
       <!-- Main UI bar -->
       <div class="pswp__ui pswp__ui--hidden">
-        <button class="pswp__button pswp__button--prev RoundButton" data-animate-left title="{{ 'product.slideshow.previous' | t }}">{% include 'icon' with 'arrow-left' %}</button>
-        <button class="pswp__button pswp__button--close RoundButton RoundButton--large" data-animate-bottom title="{{ 'product.slideshow.close' | t }}">{% include 'icon' with 'close' %}</button>
-        <button class="pswp__button pswp__button--next RoundButton" data-animate-right title="{{ 'product.slideshow.next' | t }}">{% include 'icon' with 'arrow-right' %}</button>
+        <button
+          class="pswp__button pswp__button--prev RoundButton"
+          data-animate-left
+          title="{{ 'product.slideshow.previous' | t }}"
+        >
+          {% include 'icon' with 'arrow-left' %}
+        </button>
+        <button
+          class="pswp__button pswp__button--close RoundButton RoundButton--large"
+          data-animate-bottom
+          title="{{ 'product.slideshow.close' | t }}"
+        >
+          {% include 'icon' with 'close' %}
+        </button>
+        <button
+          class="pswp__button pswp__button--next RoundButton"
+          data-animate-right
+          title="{{ 'product.slideshow.next' | t }}"
+        >
+          {% include 'icon' with 'arrow-right' %}
+        </button>
       </div>
     </div>
   </div>
