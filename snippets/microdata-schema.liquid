@@ -2,10 +2,10 @@
 
 {% if main_entity_microdata != blank %}
   <script type="application/ld+json">
-    {%- if template.name == 'product' -%}
+    {% if template.name == 'product' %}
       {{ product | structured_data }}
-    {%- elsif template.name == 'article' -%}
+    {% elsif template.name == 'article' %}
         {{ article | structured_data }}
-    {%- endif -%}
+    {% endif %}
   </script>
 {% endif %}
