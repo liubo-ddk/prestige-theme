@@ -254,7 +254,7 @@
           "collection-1": {
             "type": "collection",
             "settings": {
-              "collection": "marukyu-koyamaen-matcha",
+              "collection": "nousaku-pewter-handmade-tableware",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "",
@@ -267,6 +267,7 @@
             "type": "collection",
             "settings": {
               "collection": "marukyu-koyamaen-master-collection",
+              "image": "shopify://shop_images/1676122143480-TldmAcL8Q6.webp",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Sub-heading",
