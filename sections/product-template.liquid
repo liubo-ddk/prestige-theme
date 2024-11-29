@@ -26,17 +26,6 @@
   {%- assign review_count = rd_a3 | plus: 1 | minus: 1 -%}
 {% endif %}
 
-{%- if review_rating %}
-  <div itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating">
-    <meta itemprop="ratingValue" content="{{ review_rating }}">
-    <meta itemprop="reviewCount" content="{{ review_count }}">
-  </div>
-{%- else %}
-  <div itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating">
-    <meta itemprop="ratingValue" content="5">
-    <meta itemprop="reviewCount" content="1">
-  </div>
-{%- endif -%}
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
     {%- capture action_list_items -%}
