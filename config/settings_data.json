@@ -603,9 +603,18 @@
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {}
+      },
+      "custom_html_ypDzBR": {
+        "type": "custom-html",
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "html": "<br>\n<p>Welcome to Lumo store</p>\n<p>Find Marukyu Koyamaen Matcha</p>"
+        }
       }
     },
     "content_for_index": [
+      "custom_html_ypDzBR",
       "slideshow_dGQPRd",
       "featured-collections",
       "collection-list",
