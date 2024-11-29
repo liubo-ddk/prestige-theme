@@ -527,7 +527,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/1730702999018_1_1.webp",
-              "mobile_image": "shopify://shop_images/300_440.jpg",
+              "mobile_image": "shopify://shop_images/1730702999018_1_1.webp",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "marukyu koyamaen",
