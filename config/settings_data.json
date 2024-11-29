@@ -542,7 +542,6 @@
         "block_order": [
           "image_ybYDiY"
         ],
-        "disabled": true,
         "settings": {
           "show_fullscreen": true,
           "show_arrow": false,
@@ -606,6 +605,7 @@
       },
       "custom_html_ypDzBR": {
         "type": "custom-html",
+        "disabled": true,
         "settings": {
           "subheading": "",
           "title": "",
