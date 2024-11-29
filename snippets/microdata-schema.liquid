@@ -5,7 +5,7 @@
     "@type": "Product",
     "offers": {
       "@type": "Offer",
-      "availability": https:{%- if product.available -%}"//schema.org/InStock"{%- else -%}"//schema.org/OutOfStock"{%- endif -%},
+      "availability": {%- if product.available -%}"https://schema.org/InStock"{%- else -%}"https://schema.org/OutOfStock"{%- endif -%},
       "price": {{ product.price_min | money_without_currency | json }},
       "priceCurrency": {{ shop.currency | json }}
     },
