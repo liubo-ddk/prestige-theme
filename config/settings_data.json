@@ -53,7 +53,7 @@
     "cart_type": "drawer",
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": true,
-    "cart_free_shipping_threshold": 25,
+    "cart_free_shipping_threshold": 50,
     "share_image": "",
     "social_facebook": "",
     "social_twitter": "",
