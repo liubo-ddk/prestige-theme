@@ -140,7 +140,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Newsletter",
-              "content": "<p>Subscribe to receive updates, access to exclusive deals, get <strong>10% OFF CODE</strong>.</p>"
+              "content": "<p>Subscribe to receive updates, access to exclusive deals.</p>"
             }
           }
         },
