@@ -169,14 +169,30 @@
       "created_descending": "從最新到最舊"
     },
     "layout": {
-      "show_one_per_row": "每行顯示一個產品"
+      "show_one_per_row": "每行顯示一個產品",
+      "show_two_per_row": "每行顯示兩個產品",
+      "show_four_per_row": "每行顯示四個產品"
+    },
+    "product": {
+      "from_price_html": "從{{min_price}}起",
+      "view_product": "查看產品"
     }
   },
   "cart": {
     "general": {
       "total": "全部的",
       "currency_notice": "所有訂單均以商店貨幣處理，即{{shop_currency}} 。您購物車中的內容可能會以最新匯率以另一種貨幣顯示。",
-      "checkout": "查看"
+      "checkout": "查看",
+      "title": "大車",
+      "empty": "您的購物車是空的",
+      "empty_button": "購買我們的產品",
+      "add_note": "新增訂單備註",
+      "edit_note": "編輯訂單備註",
+      "save_note": "節省",
+      "note_placeholder": "我們能為您提供什麼協助？",
+      "free_shipping": "您有資格享受免費送貨！",
+      "free_shipping_remaining_html": "消費滿{{remaining_amount}}即可免運費！",
+      "shipping_and_taxes_notice": "$50 以上限時免運費"
     },
     "items": {
       "product": "產品",
@@ -331,6 +347,112 @@
     },
     "StockCounter": {
       "let_buy_now": "<mark>匆忙！</mark>立即購買"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "我的帳戶",
+      "welcome": "歡迎回來， {{first_name}} ！",
+      "logout": "退出",
+      "back_to_account": "返回帳戶",
+      "no_orders_title": "我的訂單",
+      "no_orders_content": "您還沒有下訂單",
+      "no_addresses_title": "沒有地址",
+      "no_addresses_content": "目前沒有保存地址",
+      "default_address": "主要地址",
+      "edit_addresses": "編輯地址",
+      "manage_addresses": "管理地址"
+    },
+    "login": {
+      "title": "登入",
+      "description": "請輸入您的電子郵件和密碼：",
+      "email": "電子郵件",
+      "password": "密碼",
+      "forgot": "忘記密碼？",
+      "submit": "登入",
+      "register_label": "沒有帳戶？",
+      "register_link": "創建一個"
+    },
+    "orders": {
+      "order_number": "命令",
+      "date": "日期",
+      "payment_status": "付款狀態",
+      "fulfillment_status": "履行狀態",
+      "total": "全部的"
+    },
+    "order": {
+      "title": "{{order_number}}",
+      "back_to_account": "返回帳戶",
+      "cancelled_at": "訂單已於{{ date }}取消",
+      "placed_at": "訂單於{{ date }}下達",
+      "fulfillment_html": "您的訂單已發送。透過編號{{tracking_number}}或點擊此處： <a href=\"&lt;span%20class='notranslate'&gt;{{tracking_url}}&lt;/span&gt;\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}</a>追蹤貨件",
+      "line_fulfillment_html": "您的產品「 {{product_title}} 」已傳送。透過編號{{tracking_number}}或點擊此處： <a href=\"&lt;span%20class='notranslate'&gt;{{tracking_url}}&lt;/span&gt;\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}</a>追蹤貨件",
+      "product": "產品",
+      "quantity": "數量",
+      "line_price": "全部的",
+      "subtotal": "小計",
+      "discount": "折扣",
+      "shipping": "船運",
+      "tax": "稅",
+      "total": "全部的",
+      "shipping_address": "收件地址",
+      "billing_address": "帳單地址",
+      "no_shipping_address": "此訂單不需要送貨地址。"
+    },
+    "activate_account": {
+      "title": "啟動帳戶",
+      "description": "請輸入密碼來建立您的帳戶：",
+      "password": "密碼",
+      "password_confirmation": "確認密碼",
+      "submit": "啟用設定",
+      "decline": "衰退"
+    },
+    "recover_password": {
+      "title": "恢復密碼",
+      "description": "請輸入您的電子郵件：",
+      "email": "電子郵件",
+      "submit": "恢復",
+      "success": "我們已向您發送了一封電子郵件，其中包含重設密碼的說明。",
+      "login_label": "還記得您的密碼嗎？",
+      "login_link": "返回登入"
+    },
+    "reset_password": {
+      "title": "重設密碼",
+      "description": "請輸入新密碼：",
+      "password": "密碼",
+      "password_confirmation": "確認密碼",
+      "submit": "重置"
+    },
+    "addresses": {
+      "title": "我的地址",
+      "empty": "尚未儲存地址",
+      "edit": "編輯",
+      "delete": "刪除",
+      "add_address": "新增地址",
+      "edit_address": "編輯地址",
+      "form_subtitle": "請填寫以下資訊：",
+      "default_address_label": "預設位址",
+      "address_label": "位址{{position}}",
+      "first_name": "名",
+      "last_name": "姓",
+      "company": "公司",
+      "address1": "地址1",
+      "address2": "地址2",
+      "city": "城市",
+      "country": "國家",
+      "province": "省",
+      "zip": "郵遞區號",
+      "phone": "電話",
+      "set_default": "設定為預設地址"
+    },
+    "register": {
+      "title": "登記",
+      "description": "請填寫以下資訊：",
+      "first_name": "名",
+      "last_name": "姓",
+      "email": "電子郵件",
+      "password": "密碼",
+      "submit": "建立我的帳戶"
     }
   }
 }
