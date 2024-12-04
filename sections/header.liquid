@@ -387,11 +387,11 @@ HEADER CONTENT
     if (currentScrollY > lastScrollY && currentScrollY > 100) {
         // 向下滚动且滚动位置超过100px时隐藏 header
         header.classList.add('hidden');
-        document.querySelector(':root').style.setProperty('--off-hide-header', 0);
+        document.querySelector(':root').setProperty('--off-hide-header', 0);
     } else {
         // 向上滚动时显示 header
         header.classList.remove('hidden');
-      document.querySelector(':root').style.setProperty('--off-hide-header', 1);
+      document.querySelector(':root').setProperty('--off-hide-header', 1);
     }
 
     lastScrollY = currentScrollY;
