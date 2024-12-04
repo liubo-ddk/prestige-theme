@@ -248,7 +248,7 @@
         "id": "currency_conversion_supported_currencies",
         "label": "Supported currencies",
         "info": "List of currencies to display. You must separate each currencies by an empty space, and use the ISO 4217 3-letter code. Example: USD CAD EUR. All the possible values are [listed here](http://bit.ly/1C4cZ3w).",
-        "default": "USD CAD EUR GBP"
+        "default": "USD CAD EUR GBP VND"
       },
       {
         "type": "select",
