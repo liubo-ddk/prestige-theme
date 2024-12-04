@@ -141,7 +141,7 @@ if (!customElements.get('localization-form')) {
           this.elements.search.focus();
         }
         if (this.hasAttribute('data-prevent-hide')) {
-          this.header.preventHide = true;
+          // this.header.preventHide = true;
         }
         document.querySelector('.menu-drawer').classList.add('country-selector-open');
       }
