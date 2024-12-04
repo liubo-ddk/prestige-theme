@@ -456,5 +456,14 @@
       "be1427617666_html": "Added to cart successfully",
       "be719299147_html": "Choose options"
     }
+  },
+  "localization": {
+    "country_label": "Country/region",
+    "language_label": "Language",
+    "update_language": "Update language",
+    "update_country": "Update country/region",
+    "search": "Search",
+    "popular_countries_regions": "Popular countries/regions",
+    "country_results_count": "{{ count }} countries/regions found"
   }
 }
