@@ -37,7 +37,7 @@
     "base_text_font_size": 14,
     "currency_conversion_enabled": true,
     "currency_conversion_round_amounts": true,
-    "currency_conversion_supported_currencies": "USD CAD EUR GBP JPY SGD NZD VND AUD",
+    "currency_conversion_supported_currencies": "USD CAD EUR GBP JPY SGD NZD AUD",
     "currency_conversion_money_format": "money_format",
     "show_page_transition": true,
     "show_image_zooming": true,
