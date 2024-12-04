@@ -11835,3 +11835,24 @@ $vertical-spacing-two-products-per-row  : 0px;
  * Localization
  * ----------------------------------------------------------------------------
  */
+
+ .localization-form {
+  display: flex;
+  flex-direction: column;
+  flex: auto 1 0;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.localization-form:only-child {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex: initial;
+  padding: 1rem 0;
+}
+
+.localization-form:only-child .button,
+.localization-form:only-child .localization-form__select {
+  margin: 1rem 1rem 0.5rem;
+  flex-grow: 1;
+}
