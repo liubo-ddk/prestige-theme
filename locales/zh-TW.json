@@ -1,0 +1,336 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "beae-quickview-default": {
+      "be1203385433_html": "可以在{{ location_name }}取貨",
+      "be1121680012_html": "目前無法在{{ location_name }}取貨",
+      "be1358949576_html": "查看店面資訊",
+      "be260978430_html": "檢查其他商店的庫存狀況",
+      "be1220360021_html": "數量",
+      "be649020154_html": "加入購物車",
+      "be28375103_html": "缺貨",
+      "be1182278043_html": "已加入購物車",
+      "be1538394658_html": "售罄",
+      "be1427617666_html": "成功加入購物車",
+      "be719299147_html": "選擇選項"
+    }
+  },
+  "404": {
+    "general": {
+      "content": "無法找到您要尋找的頁面。",
+      "button": "回首頁"
+    }
+  },
+  "general": {
+    "meta": {
+      "tags": "已標記為“ {{ tags }} ”",
+      "page": "頁{{ page }}"
+    },
+    "announcement_bar": {
+      "close": "關閉"
+    },
+    "popup": {
+      "email_placeholder": "輸入您的電子郵件",
+      "submit": "訂閱",
+      "success": "您已訂閱我們的電子報。"
+    },
+    "password": {
+      "enter_password": "輸入密碼",
+      "password_input": "您的密碼",
+      "password_submit": "進入",
+      "newsletter_input": "您的電子郵件地址",
+      "newsletter_submit": "通知我",
+      "newsletter_success": "感謝您的註冊！",
+      "powered_by_html": "商店將由{{shopify_link}}提供支持",
+      "login_title": "您是店主嗎？",
+      "login_link": "在此登入"
+    },
+    "pagination": {
+      "previous_page": "上一頁",
+      "next_page": "下一頁",
+      "go_to_page": "導航至頁面{{page}}"
+    }
+  },
+  "header": {
+    "navigation": {
+      "title": "主導航",
+      "sidebar_title": "側邊欄導航",
+      "open_sidebar": "打開導航",
+      "close_sidebar": "關閉導航",
+      "account": "帳戶",
+      "search": "搜尋",
+      "cart": "大車",
+      "open_cart": "打開購物車",
+      "close_cart": "關閉購物車",
+      "skip_to_content": "跳至內容"
+    }
+  },
+  "footer": {
+    "general": {
+      "credits_html": "主題由 JapaneseSelect | {{powered_by_link}}"
+    },
+    "newsletter": {
+      "success": "您已訂閱我們的電子報。",
+      "input": "輸入您的電子郵件地址",
+      "submit": "訂閱"
+    }
+  },
+  "search": {
+    "general": {
+      "title": "搜尋",
+      "content": "輸入一個字來搜尋我們的產品：",
+      "input_placeholder": "搜尋...",
+      "view_all": "看全部",
+      "no_results": "找不到結果",
+      "no_results_with_terms": "找不到{{terms}}的結果",
+      "pages": "頁數",
+      "articles": "雜誌",
+      "pages_and_articles": "頁面和期刊",
+      "results_count": {
+        "zero": "產品",
+        "one": "1 個結果",
+        "other": "{{count}}個結果"
+      },
+      "results_with_terms_count": {
+        "zero": "“ {{terms}} ” 的 0 個結果",
+        "one": "「 {{terms}} 」有 1 個結果",
+        "other": "「 {{terms}} 」的{{count}}結果"
+      }
+    }
+  },
+  "home_page": {
+    "onboarding": {
+      "vendor_title": "品牌名稱",
+      "product_title": "產品名稱",
+      "product_description": "產品描述可用於展示產品的功能和優勢。您可以查看 Shopify 的電子商務博客，以獲取正確行銷產品的靈感和建議。",
+      "collection_title": "集合名稱",
+      "article_name": "貼文名稱",
+      "article_category": "類別",
+      "article_excerpt": "您的商店尚未發布任何部落格文章。部落格可用於談論新產品發布、提示或您想與客戶分享的其他新聞。您可以查看 Shopify 的電子商務博客，為您自己的商店和博客獲取靈感和建議。"
+    },
+    "featured_product": {
+      "view_product": "查看產品詳情"
+    },
+    "shop_the_look": {
+      "view_product": "查看該產品",
+      "view_products": "查看產品",
+      "popover_title": "選購外觀"
+    },
+    "featured_video": {
+      "play": "播放影片"
+    },
+    "newsletter": {
+      "input": "輸入您的電子郵件",
+      "submit": "訂閱",
+      "success": "您已訂閱我們的電子報。"
+    }
+  },
+  "collection_list": {
+    "general": {
+      "title": "所有系列",
+      "empty_title": "沒有收藏",
+      "empty_button": "回首頁"
+    }
+  },
+  "collection": {
+    "general": {
+      "all_products": "所有產品",
+      "no_products": "沒有產品",
+      "empty": "集合{{collection_title}}為空",
+      "empty_button": "回首頁",
+      "reset": "重置過濾器",
+      "view_products": "查看產品"
+    },
+    "filter": {
+      "title": "篩選",
+      "show_filter": "顯示過濾器",
+      "all": "過濾器",
+      "reset": "重置",
+      "apply": "申請"
+    },
+    "sorting": {
+      "title": "種類",
+      "show_sort": "顯示排序依據",
+      "manual": "精選",
+      "best_selling": "最暢銷",
+      "title_ascending": "按字母順序排列：AZ",
+      "title_descending": "按字母順序排列：ZA",
+      "price_ascending": "價格：從低到高",
+      "price_descending": "價格：從高到低",
+      "created_ascending": "從最舊到最新",
+      "created_descending": "從最新到最舊"
+    },
+    "layout": {
+      "show_one_per_row": "每行顯示一個產品"
+    }
+  },
+  "cart": {
+    "general": {
+      "total": "全部的",
+      "currency_notice": "所有訂單均以商店貨幣處理，即{{shop_currency}} 。您購物車中的內容可能會以最新匯率以另一種貨幣顯示。",
+      "checkout": "查看"
+    },
+    "items": {
+      "product": "產品",
+      "quantity": "數量",
+      "total": "全部的",
+      "set_quantity": "將數量設為{{new_quantity}}",
+      "remove": "消除"
+    },
+    "shipping_estimator": {
+      "title": "預估運費",
+      "country": "國家",
+      "province": "省",
+      "zip_code": "郵遞區號",
+      "estimate": "估計",
+      "one_result_title": "1 個可用選項：",
+      "more_results_title": "{{count}}可用選項：",
+      "no_results_title": "找不到出貨"
+    }
+  },
+  "product": {
+    "labels": {
+      "sold_out": "售罄",
+      "on_sale": "發售中"
+    },
+    "slideshow": {
+      "close": "關閉（Esc）",
+      "previous": "上一頁（向左箭頭）",
+      "next": "下一步（右箭頭）",
+      "image_loading_error": "無法載入此圖片。請嘗試重新載入頁面。"
+    },
+    "form": {
+      "variant_label": "變體",
+      "price": "價格",
+      "quantity": "數量",
+      "from_price_html": "從{{min_price}}起",
+      "select_model": "選擇該型號",
+      "size_chart": "顯示尺寸表",
+      "inventory_quantity_count": {
+        "one": "庫存有{{count}}件。",
+        "other": "庫存有{{count}}件"
+      },
+      "low_inventory_quantity_count": {
+        "one": "庫存僅{{count}}件！",
+        "other": "庫存僅{{count}}件！"
+      },
+      "colors_count": {
+        "one": "{{count}}種色",
+        "other": "{{count}}種色"
+      },
+      "add_to_cart": "加入購物車",
+      "sold_out": "售罄",
+      "pre_order": "預購",
+      "unavailable": "不可用",
+      "view_info": "更多資訊",
+      "view_images": "查看影像"
+    },
+    "tabs": {
+      "reviews": "評論"
+    },
+    "buy_it_with": {
+      "title": "購買它與"
+    }
+  },
+  "gift_card": {
+    "issued": {
+      "subtext": "這是您的禮品卡！",
+      "illustration_alt": "禮品卡插圖",
+      "disabled": "您的禮品卡已停用。",
+      "expired": "您的禮品卡已於{{ expiry }}過期。",
+      "expires_on": "您的禮品卡將於{{ expiry }}到期。",
+      "redeem_html": "結帳時使用此代碼兌換您的禮品卡，或{{print_link}}此頁面。",
+      "shop_link": "開始購物",
+      "print": "列印",
+      "initial_amount_html": "金額： {{initial_amount}}",
+      "remaining_balance_html": "剩餘餘額： {{balance}}",
+      "add_to_apple_wallet": "加入蘋果錢包"
+    }
+  },
+  "blog": {
+    "general": {
+      "no_articles": "{{blog_title}}為空",
+      "empty_button": "回首頁",
+      "all_tag": "全部"
+    },
+    "article": {
+      "read_more": "閱讀更多",
+      "written_by": "作者： {{author}}",
+      "now_reading": "現在閱讀：",
+      "share": "分享",
+      "previous": "上一篇",
+      "next": "下一個",
+      "comments_count": {
+        "zero": "{{count}}條評論",
+        "one": "{{count}}條評論",
+        "other": "{{count}}條評論"
+      }
+    },
+    "comments": {
+      "form_title": "發表評論",
+      "name_placeholder": "姓名",
+      "email_placeholder": "電子郵件",
+      "comment_placeholder": "內容",
+      "approval_notice": "所有評論在發布前都會經過審核",
+      "submit": "發表評論",
+      "success": "您的評論已發佈。",
+      "success_moderated": "您的評論已發送。店主接受後即可可見！"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "你的名字",
+      "email": "您的電子郵件",
+      "message": "您的留言",
+      "submit": "發送訊息",
+      "successfully_sent": "您的訊息已成功發送。"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%B%d，%Y",
+    "month_day_year_time": "%B %d，%Y 在 %I:%M%p"
+  },
+  "gempages": {
+    "Carousel": {
+      "no_slider": "無滑桿"
+    },
+    "Newsletter": {
+      "err_msg_default": "無法傳送電子郵件。請稍後重試。",
+      "success_msg_default": "感謝您與我們聯繫。我們會盡快回覆您。"
+    },
+    "IconListV2": {
+      "icons_not_found": "未找到圖標"
+    },
+    "IconList": {
+      "icons_not_found": "未找到圖標"
+    },
+    "IconListHoz": {
+      "icons_not_found": "未找到圖標"
+    },
+    "Product": {
+      "product_not_found": "未找到產品"
+    },
+    "ProductList": {
+      "product_not_found": "未找到產品！",
+      "no_products_found": "沒有找到產品！",
+      "no_related_products": "沒有相關產品！"
+    },
+    "ProductTitle": {
+      "product_not_found": "未找到產品"
+    },
+    "ProductVariants": {
+      "please_select": "請選擇一個選項"
+    },
+    "StockCounter": {
+      "let_buy_now": "<mark>匆忙！</mark>立即購買"
+    }
+  }
+}
