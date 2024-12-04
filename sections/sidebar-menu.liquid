@@ -113,7 +113,7 @@
           {%- endif -%}
         </aside>
       {%- endif -%}
-      {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+      {%- if localization.available_languages.size > 1 -%}
           <localization-form class="small-hide medium-hide" data-prevent-hide>
             {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
               <div>
