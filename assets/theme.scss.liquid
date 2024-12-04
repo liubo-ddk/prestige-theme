@@ -11856,3 +11856,35 @@ $vertical-spacing-two-products-per-row  : 0px;
   margin: 1rem 1rem 0.5rem;
   flex-grow: 1;
 }
+
+@media screen and (min-width: 750px) {
+  .localization-form {
+    padding: 1rem 2rem 1rem 0;
+  }
+
+  .localization-form:first-of-type {
+    padding-left: 0;
+  }
+
+  .localization-form:only-child {
+    justify-content: start;
+    width: auto;
+    margin: 0 1rem 0 0;
+  }
+
+  .localization-form:only-child .button,
+  .localization-form:only-child .localization-form__select {
+    margin: 1rem 0;
+  }
+}
+
+.localization-form .button {
+  padding: 1rem;
+}
+
+.localization-form__currency {
+  opacity: 0;
+  transition: opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  white-space: nowrap;
+  padding-right: 1.7rem;
+}
