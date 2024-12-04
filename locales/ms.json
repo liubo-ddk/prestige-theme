@@ -1,0 +1,175 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "beae-quickview-default": {
+      "be1203385433_html": "Pengambilan tersedia di {{ location_name }}",
+      "be1121680012_html": "Pickup tidak tersedia pada masa ini di {{ location_name }}",
+      "be1358949576_html": "Lihat maklumat kedai",
+      "be260978430_html": "Semak ketersediaan di kedai lain",
+      "be1220360021_html": "Kuantiti",
+      "be649020154_html": "Tambah ke troli",
+      "be28375103_html": "kehabisan stok",
+      "be1182278043_html": "Ditambah pada troli",
+      "be1538394658_html": "habis dijual",
+      "be1427617666_html": "Berjaya ditambahkan pada troli",
+      "be719299147_html": "Pilih pilihan"
+    }
+  },
+  "404": {
+    "general": {
+      "content": "Halaman yang anda cari tidak ditemui.",
+      "button": "Kembali ke laman utama"
+    }
+  },
+  "general": {
+    "meta": {
+      "tags": "Ditag \" {{ tags }} \"",
+      "page": "Halaman {{ page }}"
+    },
+    "announcement_bar": {
+      "close": "tutup"
+    },
+    "popup": {
+      "email_placeholder": "Masukkan e-mel anda",
+      "submit": "Langgan",
+      "success": "Anda telah melanggan surat berita kami."
+    },
+    "password": {
+      "enter_password": "Masukkan kata laluan",
+      "password_input": "Kata laluan anda",
+      "password_submit": "Masuk",
+      "newsletter_input": "alamat e-mel anda",
+      "newsletter_submit": "Beritahu saya",
+      "newsletter_success": "Terima kasih kerana mendaftar!",
+      "powered_by_html": "Kedai ini akan dikuasakan oleh {{shopify_link}}",
+      "login_title": "Adakah anda pemilik kedai?",
+      "login_link": "Log masuk di sini"
+    },
+    "pagination": {
+      "previous_page": "Halaman sebelumnya",
+      "next_page": "Halaman seterusnya",
+      "go_to_page": "Navigasi ke halaman {{page}}"
+    }
+  },
+  "header": {
+    "navigation": {
+      "title": "Navigasi utama",
+      "sidebar_title": "Navigasi bar sisi",
+      "open_sidebar": "Buka navigasi",
+      "close_sidebar": "Tutup navigasi",
+      "account": "Akaun",
+      "search": "Cari",
+      "cart": "Troli",
+      "open_cart": "Buka troli",
+      "close_cart": "Tutup troli",
+      "skip_to_content": "Langkau ke kandungan"
+    }
+  },
+  "footer": {
+    "general": {
+      "credits_html": "Tema oleh JapaneseSelect | {{powered_by_link}}"
+    },
+    "newsletter": {
+      "success": "Anda telah melanggan surat berita kami.",
+      "input": "Masukkan alamat e-mel anda",
+      "submit": "Langgan"
+    }
+  },
+  "search": {
+    "general": {
+      "title": "Cari",
+      "content": "Masukkan perkataan untuk mencari produk kami:",
+      "input_placeholder": "Cari...",
+      "view_all": "Lihat semua",
+      "no_results": "Tiada hasil dapat ditemui",
+      "no_results_with_terms": "Tiada hasil dapat ditemui untuk {{terms}}",
+      "pages": "muka surat",
+      "articles": "Jurnal",
+      "pages_and_articles": "Halaman &amp; Jurnal",
+      "results_count": {
+        "zero": "Produk",
+        "one": "1 keputusan",
+        "other": "{{count}} keputusan"
+      },
+      "results_with_terms_count": {
+        "zero": "0 keputusan untuk \" {{terms}} \"",
+        "one": "1 hasil untuk \" {{terms}} \"",
+        "other": "{{count}} keputusan untuk \" {{terms}} \""
+      }
+    }
+  },
+  "home_page": {
+    "onboarding": {
+      "vendor_title": "Nama jenama",
+      "product_title": "Nama produk",
+      "product_description": "Penerangan produk boleh digunakan untuk mempamerkan ciri dan kelebihan produk anda. Anda boleh menyemak blog e-dagang Shopify untuk mendapatkan inspirasi dan nasihat untuk memasarkan produk anda dengan betul.",
+      "collection_title": "Nama koleksi",
+      "article_name": "Nama jawatan",
+      "article_category": "kategori",
+      "article_excerpt": "Kedai anda belum lagi menerbitkan sebarang catatan blog. Blog boleh digunakan untuk bercakap tentang pelancaran produk baharu, petua atau berita lain yang ingin anda kongsi dengan pelanggan anda. Anda boleh menyemak blog e-dagang Shopify untuk mendapatkan inspirasi dan nasihat untuk kedai dan blog anda sendiri."
+    },
+    "featured_product": {
+      "view_product": "Lihat butiran produk"
+    },
+    "shop_the_look": {
+      "view_product": "Lihat produk ini",
+      "view_products": "Lihat produk",
+      "popover_title": "Beli rupa"
+    },
+    "featured_video": {
+      "play": "Mainkan video"
+    },
+    "newsletter": {
+      "input": "Masukkan e-mel anda",
+      "submit": "Langgan",
+      "success": "Anda telah melanggan surat berita kami."
+    }
+  },
+  "collection_list": {
+    "general": {
+      "title": "Semua koleksi",
+      "empty_title": "Tiada koleksi",
+      "empty_button": "Kembali ke laman utama"
+    }
+  },
+  "collection": {
+    "general": {
+      "all_products": "Semua produk",
+      "no_products": "Tiada produk",
+      "empty": "Koleksi {{collection_title}} kosong",
+      "empty_button": "Kembali ke laman utama",
+      "reset": "Tetapkan semula penapis",
+      "view_products": "Lihat produk"
+    },
+    "filter": {
+      "title": "Penapis",
+      "show_filter": "Tunjukkan penapis",
+      "all": "Penapis",
+      "reset": "Tetapkan semula",
+      "apply": "Mohon"
+    },
+    "sorting": {
+      "title": "Isih",
+      "show_sort": "Tunjukkan isihan mengikut",
+      "manual": "Ditampilkan",
+      "best_selling": "Terlaris",
+      "title_ascending": "Mengikut abjad: AZ",
+      "title_descending": "Mengikut abjad: ZA",
+      "price_ascending": "Harga: Rendah ke Tinggi",
+      "price_descending": "Harga: Tinggi ke Rendah",
+      "created_ascending": "Tertua kepada Terbaru",
+      "created_descending": "Terbaharu kepada Tertua"
+    },
+    "layout": {
+      "show_one_per_row": "Tunjukkan satu produk setiap baris"
+    }
+  }
+}
