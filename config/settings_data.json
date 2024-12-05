@@ -109,9 +109,9 @@
         "settings": {
           "use_sticky_header": true,
           "use_scroll_header": true,
-          "logo": "shopify://shop_images/Logo-Banner3_245c1d28-9e61-44e4-8110-0a96c123e1ae.png",
-          "logo_max_width": 90,
-          "mobile_logo_max_width": 60,
+          "logo": "shopify://shop_images/Logo_Banner3_w_trans_1.png",
+          "logo_max_width": 150,
+          "mobile_logo_max_width": 75,
           "navigation_menu": "main-menu",
           "navigation_style": "center",
           "enable_transparent_header": true,
@@ -535,10 +535,25 @@
               "button_2_text": "Teamasters Brands",
               "button_2_link": "shopify://collections/marukyu-koyamaen-master-collection"
             }
+          },
+          "image_JPrjPm": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/P-4-KOSE-SEKWCR-40-Kos_C3_A9_20Sekkisei_20Whitening_20Cream_2040g.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
           }
         },
         "block_order": [
-          "image_ybYDiY"
+          "image_ybYDiY",
+          "image_JPrjPm"
         ],
         "settings": {
           "show_fullscreen": true,
