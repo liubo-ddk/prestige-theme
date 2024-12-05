@@ -461,6 +461,7 @@
     "update_language": "更新語言",
     "update_country": "更新國家/地區",
     "popular_countries_regions": "熱門國家/地區",
-    "country_results_count": "找到{{ count }}個國家/地區"
+    "country_results_count": "找到{{ count }}個國家/地區",
+    "search": "搜尋"
   }
 }
