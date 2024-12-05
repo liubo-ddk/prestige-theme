@@ -454,5 +454,13 @@
       "password": "密碼",
       "submit": "建立我的帳戶"
     }
+  },
+  "localization": {
+    "country_label": "國家/地區",
+    "language_label": "語言",
+    "update_language": "更新語言",
+    "update_country": "更新國家/地區",
+    "popular_countries_regions": "熱門國家/地區",
+    "country_results_count": "找到{{ count }}個國家/地區"
   }
 }
