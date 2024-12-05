@@ -109,7 +109,7 @@
         "settings": {
           "use_sticky_header": true,
           "use_scroll_header": true,
-          "logo": "shopify://shop_images/logo.png",
+          "logo": "shopify://shop_images/Logo-Banner3_245c1d28-9e61-44e4-8110-0a96c123e1ae.png",
           "logo_max_width": 90,
           "mobile_logo_max_width": 60,
           "navigation_menu": "main-menu",
@@ -267,7 +267,6 @@
             "type": "collection",
             "settings": {
               "collection": "marukyu-koyamaen-master-collection",
-              "image": "shopify://shop_images/1676122143480-TldmAcL8Q6.webp",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Sub-heading",
@@ -380,7 +379,6 @@
           "look_GeLXAm": {
             "type": "look",
             "settings": {
-              "image": "shopify://shop_images/1730206372.png",
               "dot_style": "light",
               "product_1": "shinchaen-premium-matcha-powder-20g",
               "product_1_horizontal_position": 15,
@@ -625,33 +623,7 @@
       "timeline",
       "shop-the-look",
       "blog-posts"
-    ],
-    "blocks": {
-      "13768625480086291342": {
-        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
-        "disabled": false,
-        "settings": {}
-      },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": true,
-        "settings": {
-          "button_color": "#000000",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#6a6a6a",
-          "button_icon": "chat_bubble",
-          "button_text": "chat_with_us",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": ""
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Allure": {
