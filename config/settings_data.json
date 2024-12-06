@@ -109,7 +109,6 @@
         "settings": {
           "use_sticky_header": true,
           "use_scroll_header": true,
-          "logo": "shopify://shop_images/Logo_Banner3_w_trans_1.png",
           "logo_max_width": 150,
           "mobile_logo_max_width": 75,
           "navigation_menu": "main-menu",
@@ -140,7 +139,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Newsletter",
-              "content": "<p>Subscribe to receive updates, access to exclusive deals.</p>"
+              "content": "<p>Subscribe to receive updates,  get 10% Coupon! access to exclusive deals.</p>"
             }
           }
         },
