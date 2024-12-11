@@ -299,6 +299,7 @@
           "collection-1",
           "collection_bmq7Cf"
         ],
+        "disabled": true,
         "settings": {
           "image_size": "normal",
           "add_spacing": true,
@@ -376,13 +377,14 @@
           "blog-0": {
             "type": "blog",
             "settings": {
-              "blog": "blog"
+              "blog": "新闻"
             }
           }
         },
         "block_order": [
           "blog-0"
         ],
+        "disabled": true,
         "settings": {
           "subheading": "",
           "title": "New Blog",
@@ -517,6 +519,7 @@
         "block_order": [
           "collection_8cKAq4"
         ],
+        "disabled": true,
         "settings": {
           "title": "Featured collection",
           "layout_mode": "grid",
