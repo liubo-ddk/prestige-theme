@@ -216,7 +216,7 @@
           "collection_tJNgVV": {
             "type": "collection",
             "settings": {
-              "collection": "matcha-marukyu-koyamaen",
+              "collection": "marukyu-koyamaen-matcha",
               "title": "",
               "grid_items_count": 8,
               "button_text": "View all products"
@@ -378,8 +378,9 @@
           "look_GeLXAm": {
             "type": "look",
             "settings": {
+              "image": "shopify://shop_images/01-10-aoarashi-40g-7402_1.png",
               "dot_style": "light",
-              "product_1": "shinchaen-premium-matcha-powder-20g",
+              "product_1": "aoarashi-marukyu-kpyamaen-beverage-matcha",
               "product_1_horizontal_position": 15,
               "product_1_vertical_position": 15,
               "product_2": "",
