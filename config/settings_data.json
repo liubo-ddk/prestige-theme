@@ -111,11 +111,9 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Tea",
-              "push_1_image": "shopify://shop_images/jp_tea.jpg",
               "push_1_heading": "Japanese Tea",
               "push_1_subheading": "Green tea and Matcha",
               "push_1_url": "shopify://collections/matcha-marukyu-koyamaen",
-              "push_2_image": "shopify://shop_images/cn_tea.jpg",
               "push_2_heading": "Chineses Tea",
               "push_2_subheading": "URON and Maojian",
               "push_2_url": "shopify://products/bamboo-nousaku-handmake-sake-cup"
@@ -235,7 +233,7 @@
           "collection_tJNgVV": {
             "type": "collection",
             "settings": {
-              "collection": "matcha-marukyu-koyamaen",
+              "collection": "marukyu-koyamaen-matcha",
               "title": "",
               "grid_items_count": 8,
               "button_text": "View all products"
@@ -299,7 +297,6 @@
           "collection-1",
           "collection_bmq7Cf"
         ],
-        "disabled": true,
         "settings": {
           "image_size": "normal",
           "add_spacing": true,
@@ -377,14 +374,13 @@
           "blog-0": {
             "type": "blog",
             "settings": {
-              "blog": "新闻"
+              "blog": "blog"
             }
           }
         },
         "block_order": [
           "blog-0"
         ],
-        "disabled": true,
         "settings": {
           "subheading": "",
           "title": "New Blog",
@@ -399,6 +395,7 @@
           "look_GeLXAm": {
             "type": "look",
             "settings": {
+              "image": "shopify://shop_images/8b1419e88ec5f1943032f6d467a8655b.png",
               "dot_style": "light",
               "product_1": "matcha-starter-set",
               "product_1_horizontal_position": 15,
@@ -415,7 +412,6 @@
         "block_order": [
           "look_GeLXAm"
         ],
-        "disabled": true,
         "settings": {
           "subheading": "Marukyu Koyamaen wakatake",
           "title": "Matcha Starter Best Choice",
@@ -519,7 +515,6 @@
         "block_order": [
           "collection_8cKAq4"
         ],
-        "disabled": true,
         "settings": {
           "title": "Featured collection",
           "layout_mode": "grid",
@@ -657,7 +652,6 @@
       "1533077274726",
       "featured_video_64kzgi",
       "slideshow",
-      "featured-product",
       "timeline",
       "blog-posts"
     ],
