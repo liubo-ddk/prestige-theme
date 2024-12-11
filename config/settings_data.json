@@ -114,10 +114,11 @@
               "push_1_image": "shopify://shop_images/jp_tea.jpg",
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
-              "push_1_url": "",
+              "push_1_url": "shopify://collections/matcha-marukyu-koyamaen",
+              "push_2_image": "shopify://shop_images/cn_tea.jpg",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
-              "push_2_url": ""
+              "push_2_url": "shopify://products/bamboo-nousaku-handmake-sake-cup"
             }
           }
         },
