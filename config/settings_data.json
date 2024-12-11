@@ -111,11 +111,9 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Tea",
-              "push_1_image": "shopify://shop_images/jp_tea.jpg",
               "push_1_heading": "Japanese Tea",
               "push_1_subheading": "Green tea and Matcha",
               "push_1_url": "shopify://collections/matcha-marukyu-koyamaen",
-              "push_2_image": "shopify://shop_images/cn_tea.jpg",
               "push_2_heading": "Chineses Tea",
               "push_2_subheading": "URON and Maojian",
               "push_2_url": "shopify://products/bamboo-nousaku-handmake-sake-cup"
@@ -397,9 +395,9 @@
           "look_GeLXAm": {
             "type": "look",
             "settings": {
-              "image": "shopify://shop_images/01-10-aoarashi-40g-7402_1.png",
+              "image": "shopify://shop_images/51WU3pZwAPL._AC_SX679.jpg",
               "dot_style": "light",
-              "product_1": "aoarashi-marukyu-kpyamaen-beverage-matcha",
+              "product_1": "matcha-starter-set",
               "product_1_horizontal_position": 15,
               "product_1_vertical_position": 15,
               "product_2": "",
