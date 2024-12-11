@@ -106,6 +106,24 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "mega_menu_KQDGXh": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Japanese Tea",
+              "push_1_image": "shopify://shop_images/jp_tea.jpg",
+              "push_1_heading": "Example heading",
+              "push_1_subheading": "Example sub-heading",
+              "push_1_url": "",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Example sub-heading",
+              "push_2_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega_menu_KQDGXh"
+        ],
         "settings": {
           "use_sticky_header": true,
           "use_scroll_header": true,
@@ -114,7 +132,7 @@
           "navigation_menu": "main-menu",
           "navigation_style": "center",
           "enable_transparent_header": true,
-          "enable_transparent_header_collection": false,
+          "enable_transparent_header_collection": true,
           "transparent_text_color": "#ffffff"
         }
       },
