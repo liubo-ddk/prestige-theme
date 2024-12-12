@@ -32,7 +32,7 @@
     "secondary_elements_text_color": "#ffffff",
     "heading_font": "serif",
     "heading_size": "small",
-    "uppercase_heading": true,
+    "uppercase_heading": false,
     "text_font": "sans-serif",
     "base_text_font_size": 14,
     "currency_conversion_enabled": true,
