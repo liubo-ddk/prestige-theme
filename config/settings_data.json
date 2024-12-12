@@ -258,7 +258,7 @@
           "collection-0": {
             "type": "collection",
             "settings": {
-              "collection": "matcha-tools",
+              "collection": "matcha-marukyu-koyamaen",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "",
@@ -270,7 +270,7 @@
           "collection-1": {
             "type": "collection",
             "settings": {
-              "collection": "nousaku-pewter-handmade-tableware",
+              "collection": "",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "",
@@ -665,19 +665,48 @@
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
         }
+      },
+      "shop_the_look_jRgAcg": {
+        "type": "shop-the-look",
+        "blocks": {
+          "look_xkyHNW": {
+            "type": "look",
+            "settings": {
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 30,
+              "product_1_vertical_position": 40,
+              "product_2": "",
+              "product_2_horizontal_position": 45,
+              "product_2_vertical_position": 65,
+              "product_3": "",
+              "product_3_horizontal_position": 70,
+              "product_3_vertical_position": 50
+            }
+          }
+        },
+        "block_order": [
+          "look_xkyHNW"
+        ],
+        "disabled": true,
+        "settings": {
+          "subheading": "Shop",
+          "title": "Our looks",
+          "show_mobile_product_info": false
+        }
       }
     },
     "content_for_index": [
       "custom_html_ypDzBR",
       "slideshow_dGQPRd",
       "featured_collections_JK3cbK",
-      "shop-the-look",
       "collection-list",
       "1533077274726",
       "featured_video_64kzgi",
       "slideshow",
       "timeline",
-      "blog-posts"
+      "blog-posts",
+      "shop_the_look_jRgAcg"
     ],
     "blocks": {
       "14060646107696862457": {
