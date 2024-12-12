@@ -640,12 +640,37 @@
           "title": "",
           "html": "<br>\n<p>Welcome to Lumo store</p>\n<p>Find Marukyu Koyamaen Matcha</p>"
         }
+      },
+      "featured_collections_JK3cbK": {
+        "type": "featured-collections",
+        "blocks": {
+          "collection_c4CtUX": {
+            "type": "collection",
+            "settings": {
+              "collection": "matcha-marukyu-koyamaen",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "collection_c4CtUX"
+        ],
+        "settings": {
+          "title": "Instock!",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
       }
     },
     "content_for_index": [
       "custom_html_ypDzBR",
       "slideshow_dGQPRd",
-      "featured-collections",
+      "featured_collections_JK3cbK",
       "shop-the-look",
       "collection-list",
       "1533077274726",
