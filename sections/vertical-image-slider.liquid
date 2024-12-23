@@ -27,7 +27,7 @@
     {%- for block in section.blocks -%}
       <div class="Carousel__Cell Instafeed__Cell">
         <a href="{{ block.settings.link }}" class="Instafeed__Link PlaceholderBackground">
-          <img src="{{ block.settings.image  | img_url: '100x' }}" alt="{{ block.settings.text }}">
+          <img src="{{ block.settings.image  | img_url: '100x' }}" class="Instafeed__Image" alt="{{ block.settings.text }}">
         </a>
       </div>
     {%- endfor -%}
