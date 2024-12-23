@@ -642,13 +642,119 @@
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
         }
+      },
+      "custom_html_9HdrHp": {
+        "type": "custom-html",
+        "custom_css": [
+          ".image-grid {display: grid; grid-template-columns: repeat(3, 1fr); /* 3 images per row */ gap: 10px; /* Spacing between images */ margin: 0px auto; width: 90%; /* Optional: Set the width of the container */}",
+          ".image-grid img {width: 100%; /* Make images responsive */ height: auto; /* Keep aspect ratio */ object-fit: cover; /* Optional: Ensures image fits nicely in the grid */ padding: 5px;}"
+        ],
+        "settings": {
+          "subheading": "Beauty",
+          "title": "Our Merchants",
+          "html": "<div class=\"image-grid\">\n<a><img src=\"https://upload.wikimedia.org/wikipedia/commons/7/7f/Shiseido_logo.svg\"></a><img src=\"https://upload.wikimedia.org/wikipedia/commons/7/7f/Shiseido_logo.svg\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/7/7f/Shiseido_logo.svg\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/7/7f/Shiseido_logo.svg\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/7/7f/Shiseido_logo.svg\">\n</div>"
+        }
+      },
+      "custom_html_d3JUyL": {
+        "type": "custom-html",
+        "custom_css": [
+          ".image-grid {display: grid; grid-template-columns: repeat(3, 1fr); /* 3 images per row */ gap: 10px; /* Spacing between images */ margin: 0px auto; width: 90%; /* Optional: Set the width of the container */}",
+          ".image-grid img {width: 100%; /* Make images responsive */ height: auto; /* Keep aspect ratio */ object-fit: cover; /* Optional: Ensures image fits nicely in the grid */ padding: 5px;}"
+        ],
+        "settings": {
+          "subheading": "Tea & Matcha",
+          "title": "Our Merchants",
+          "html": "<div class=\"image-grid\">\n<img src=\"https://www.marukyu-koyamaen.co.jp/english/img-2013/base/international-logo.jpg\"><img src=\"https://www.marukyu-koyamaen.co.jp/english/img-2013/base/international-logo.jpg\"><img src=\"https://www.marukyu-koyamaen.co.jp/english/img-2013/base/international-logo.jpg\"><img src=\"https://www.marukyu-koyamaen.co.jp/english/img-2013/base/international-logo.jpg\"><img src=\"https://www.marukyu-koyamaen.co.jp/english/img-2013/base/international-logo.jpg\">\n</div>"
+        }
+      },
+      "featured_collections_x7FXU7": {
+        "type": "featured-collections",
+        "blocks": {
+          "collection_CQyA7w": {
+            "type": "collection",
+            "settings": {
+              "collection": "beauty",
+              "title": "",
+              "grid_items_count": 4,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "collection_CQyA7w"
+        ],
+        "settings": {
+          "title": "",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "collection_list_PhztwA": {
+        "type": "collection-list",
+        "blocks": {
+          "collection_bj87wp": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "",
+              "button_text": "View products",
+              "apply_overlay": true
+            }
+          },
+          "collection_RmwFpj": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "",
+              "button_text": "View products",
+              "apply_overlay": true
+            }
+          },
+          "collection_q6WWmU": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "",
+              "button_text": "View products",
+              "apply_overlay": true
+            }
+          }
+        },
+        "block_order": [
+          "collection_bj87wp",
+          "collection_RmwFpj",
+          "collection_q6WWmU"
+        ],
+        "settings": {
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
       }
     },
     "content_for_index": [
       "custom_html_ypDzBR",
       "slideshow_dGQPRd",
       "featured_collections_JK3cbK",
-      "featured_video_64kzgi"
+      "featured_video_64kzgi",
+      "custom_html_d3JUyL",
+      "collection_list_PhztwA",
+      "featured_collections_x7FXU7",
+      "custom_html_9HdrHp"
     ],
     "blocks": {
       "14060646107696862457": {
