@@ -702,7 +702,7 @@
               "image": "shopify://shop_images/Shiseido-Fino-Premium-Touch-Hair-Mask--Pack-of-3--5-2024-04-29T02_3A45_3A40.619Z.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
+              "subheading": "",
               "title": "",
               "button_text": "View products",
               "apply_overlay": true
@@ -714,7 +714,7 @@
               "collection": "kose",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
+              "subheading": "",
               "title": "",
               "button_text": "View products",
               "apply_overlay": true
@@ -726,7 +726,7 @@
               "collection": "suisai",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
+              "subheading": "",
               "title": "",
               "button_text": "View products",
               "apply_overlay": true
