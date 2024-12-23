@@ -4,7 +4,7 @@
       {%- for block in section.blocks -%}
         <div class="ImageSlider__Card">
           <a href="{{ block.settings.link }}">
-            <img src="{{ block.settings.image }}" alt="{{ block.settings.text }}">
+            <img src="{{ block.settings.image  | img_url: '1000x' }}" alt="{{ block.settings.text }}">
             <div class="ImageSlider__Text">{{ block.settings.text }}</div>
           </a>
         </div>
