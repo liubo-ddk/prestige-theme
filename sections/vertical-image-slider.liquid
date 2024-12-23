@@ -40,8 +40,8 @@
   <div class="Instafeed Carousel Carousel--fixed" data-flickity-config='{{ flickity_config }}'>
     {%- for block in section.blocks -%}
       <div class="Carousel__Cell Instafeed__Cell">
-        <a href="#" class="Instafeed__Link PlaceholderBackground">
-          {{ block.settings.image | placeholder_svg_tag: 'Instafeed__Image PlaceholderBackground__Svg PlaceholderSvg--dark' }}
+        <a href="{{ block.settings.link }}" class="Instafeed__Link PlaceholderBackground">
+          <img src="{{ block.settings.image  | img_url: '100x' }}" alt="{{ block.settings.text }}">
         </a>
       </div>
     {%- endfor -%}
