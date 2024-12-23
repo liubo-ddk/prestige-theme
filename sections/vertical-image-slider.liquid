@@ -24,14 +24,24 @@
   .ImageSlider__Card {
     display: inline-block;
     margin-right: 10px;
+    text-align: center;
   }
   .ImageSlider__Card img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
   .ImageSlider__Text {
-    text-align: center;
     margin-top: 5px;
+    color: #333;
+  }
+  .ImageSlider__Card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .ImageSlider__Card a:hover .ImageSlider__Text {
+    text-decoration: underline;
   }
 </style>
 
