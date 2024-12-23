@@ -733,11 +733,47 @@
           "button_text": "",
           "button_url": ""
         }
+      },
+      "vertical_image_slider_thMgGn": {
+        "type": "vertical-image-slider",
+        "blocks": {
+          "image_card_TCEx3W": {
+            "type": "image_card",
+            "settings": {
+              "image": "shopify://shop_images/P-3-MEJI-AMICOL-196-Meiji_20Amino_20Collagen_20Powder_20Beauty_20Supplement_20196g_20_28for_2028_20days_29.jpg",
+              "text": "333333",
+              "link": ""
+            }
+          },
+          "image_card_HXwhfP": {
+            "type": "image_card",
+            "settings": {
+              "image": "shopify://shop_images/japan_cosme.jpg",
+              "text": "123321",
+              "link": ""
+            }
+          },
+          "image_card_6DJm76": {
+            "type": "image_card",
+            "settings": {
+              "image": "shopify://shop_images/P-5-MEJI-AMICOL-196-Meiji_20Amino_20Collagen_20Powder_20Beauty_20Supplement_20196g_20_28for_2028_20days_29.jpg",
+              "text": "111111",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_card_TCEx3W",
+          "image_card_HXwhfP",
+          "image_card_6DJm76"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
       "instagram_feed_B4q77y",
       "slideshow_dGQPRd",
+      "vertical_image_slider_thMgGn",
       "featured_collections_JK3cbK",
       "featured_video_64kzgi",
       "custom_html_d3JUyL",
