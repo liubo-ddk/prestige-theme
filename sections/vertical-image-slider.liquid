@@ -40,12 +40,7 @@
 {% schema %}
 {
   "name": "Vertical Image Slider",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "image_card",
-      "name": "Image Card",
-      "settings": [
+  "settings": [
         {
           "type": "text",
           "id": "subheading",
@@ -57,7 +52,12 @@
           "id": "title",
           "label": "Heading",
           "default": "Follow us"
-        },
+        }],
+  "blocks": [
+    {
+      "type": "image_card",
+      "name": "Image Card",
+      "settings": [
         {
           "type": "image_picker",
           "id": "image",
