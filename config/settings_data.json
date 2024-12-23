@@ -723,17 +723,6 @@
           "button_color": "#363636"
         }
       },
-      "instagram_feed_B4q77y": {
-        "type": "instagram-feed",
-        "settings": {
-          "subheading": "",
-          "title": "Our Sales",
-          "access_token": "",
-          "image_count": 15,
-          "button_text": "",
-          "button_url": ""
-        }
-      },
       "vertical_image_slider_thMgGn": {
         "type": "vertical-image-slider",
         "blocks": {
@@ -767,14 +756,15 @@
           "image_card_HXwhfP",
           "image_card_6DJm76"
         ],
-        "disabled": true,
-        "settings": {}
+        "settings": {
+          "subheading": "",
+          "title": "Our Sales"
+        }
       }
     },
     "content_for_index": [
-      "instagram_feed_B4q77y",
-      "slideshow_dGQPRd",
       "vertical_image_slider_thMgGn",
+      "slideshow_dGQPRd",
       "featured_collections_JK3cbK",
       "featured_video_64kzgi",
       "custom_html_d3JUyL",
