@@ -723,18 +723,6 @@
           "button_color": "#363636"
         }
       },
-      "image_with_text_overlay_R7V4xe": {
-        "type": "image-with-text-overlay",
-        "settings": {
-          "section_size": "small",
-          "text_color": "#ffffff",
-          "overlay_color": "#000000",
-          "overlay_opacity": 30,
-          "subheading": "",
-          "title": "Tell your story",
-          "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
-        }
-      },
       "instagram_feed_B4q77y": {
         "type": "instagram-feed",
         "settings": {
@@ -755,8 +743,7 @@
       "custom_html_d3JUyL",
       "collection_list_PhztwA",
       "featured_collections_x7FXU7",
-      "custom_html_9HdrHp",
-      "image_with_text_overlay_R7V4xe"
+      "custom_html_9HdrHp"
     ],
     "blocks": {
       "14060646107696862457": {
