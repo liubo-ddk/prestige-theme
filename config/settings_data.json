@@ -95,7 +95,7 @@
         "custom_css": [],
         "settings": {
           "enable_bar": true,
-          "home_page_only": false,
+          "home_page_only": true,
           "background": "#000000",
           "text_color": "#ffffff",
           "content": "🚚 Free Worldwide Shipping Above $50 USD",
@@ -502,6 +502,7 @@
       },
       "featured_video_64kzgi": {
         "type": "featured-video",
+        "disabled": true,
         "settings": {
           "section_size": "large",
           "text_color": "#ffffff",
@@ -528,25 +529,10 @@
               "button_2_text": "Teamasters Brands",
               "button_2_link": "shopify://collections/marukyu-koyamaen-master-collection"
             }
-          },
-          "image_JPrjPm": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/P-4-KOSE-SEKWCR-40-Kos_C3_A9_20Sekkisei_20Whitening_20Cream_2040g.jpg",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "Slide title",
-              "title": "Tell your story",
-              "button_1_text": "",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
-            }
           }
         },
         "block_order": [
-          "image_ybYDiY",
-          "image_JPrjPm"
+          "image_ybYDiY"
         ],
         "settings": {
           "show_fullscreen": true,
@@ -608,15 +594,6 @@
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {}
-      },
-      "custom_html_ypDzBR": {
-        "type": "custom-html",
-        "disabled": true,
-        "settings": {
-          "subheading": "",
-          "title": "",
-          "html": "<br>\n<p>Welcome to Lumo store</p>\n<p>Find Marukyu Koyamaen Matcha</p>"
-        }
       },
       "featured_collections_JK3cbK": {
         "type": "featured-collections",
@@ -745,17 +722,41 @@
           "text_color": "#ffffff",
           "button_color": "#363636"
         }
+      },
+      "image_with_text_overlay_R7V4xe": {
+        "type": "image-with-text-overlay",
+        "settings": {
+          "section_size": "small",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 30,
+          "subheading": "",
+          "title": "Tell your story",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+        }
+      },
+      "instagram_feed_B4q77y": {
+        "type": "instagram-feed",
+        "settings": {
+          "subheading": "",
+          "title": "Our Sales",
+          "access_token": "",
+          "image_count": 15,
+          "button_text": "",
+          "button_url": ""
+        }
       }
     },
     "content_for_index": [
-      "custom_html_ypDzBR",
+      "instagram_feed_B4q77y",
       "slideshow_dGQPRd",
       "featured_collections_JK3cbK",
       "featured_video_64kzgi",
       "custom_html_d3JUyL",
       "collection_list_PhztwA",
       "featured_collections_x7FXU7",
-      "custom_html_9HdrHp"
+      "custom_html_9HdrHp",
+      "image_with_text_overlay_R7V4xe"
     ],
     "blocks": {
       "14060646107696862457": {
