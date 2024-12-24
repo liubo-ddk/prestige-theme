@@ -8,6 +8,7 @@
                   data-section-id="{{ section.id }}"
                   data-product-id="{{ product.id }}"
                 >
+  {{ product.id }}
   {{ recommendations.products_count }}
   {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     {% if recommendations.intent == 'related' %}
