@@ -8,8 +8,6 @@
                   data-section-id="{{ section.id }}"
                   data-product-id="{{ product.id }}"
                 >
-  {{ product.title }}
-  {{ product | json }}
   {{ recommendations.products_count }}
   {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     {% if recommendations.intent == 'related' %}
