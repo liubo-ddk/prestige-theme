@@ -2,12 +2,9 @@
   {%- assign product = cart.items.first -%}
 {%- endif -%} {% endcomment %}
 {% assign recommendations = product.recommendations %}
-<product-recommendations
-                  class="complementary-products quick-add-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
-                  data-url="{{ routes.product_recommendations_url }}?limit={{ block.settings.product_list_limit }}&intent=complementary"
-                  data-section-id="{{ section.id }}"
-                  data-product-id="{{ product.id }}"
-                >
+<div class="product-recommendations"
+  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related">
+  
   {{ recommendations.products_count }}
   {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     {% if recommendations.intent == 'related' %}
@@ -35,7 +32,7 @@
       {%- endfor -%}
     </ul>
   {%- endif -%}
-</product-recommendations>
+</div>
 {% javascript %}
   const handleIntersection = (entries, observer) => {
     if (!entries[0].isIntersecting) return;
